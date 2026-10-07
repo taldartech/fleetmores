@@ -3,220 +3,366 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Solutions by Transport Segment | FleetMores TruckBill</title>
-  <meta name="description" content="Tailored transportation software solutions for Transporters, Fleet Owners, Freight Brokers, and PTL/Parchun operators across India.">
+  <title>Solutions by Segment — Transporters, Fleet Owners & Brokers | FleetMores</title>
+  <meta name="description" content="TruckBill solutions tailored specifically for Indian transport contractors, fleet owners with own trucks, freight commission brokers, and logistics agencies.">
+  <link rel="canonical" href="https://fleetmores.com/solutions.html">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/components.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
-  <!-- HEADER -->
+  <!-- HEADER (Sassy Glassmorphic Header) -->
   <header class="fm-header" id="mainHeader">
     <div class="container-fm">
       <div class="header-inner">
         <a href="index.html" class="header-brand-group" aria-label="FleetMores Home">
-          <img src="assets/images/fleetmores-logo.svg" alt="FLEETMORES" width="180" height="26">
+          <img src="assets/images/fleetmores-logo.svg" alt="FLEETMORES" width="180" height="28">
           <span class="header-brand-divider"></span>
           <span class="header-product-badge">
             <img src="assets/images/truckbill-logo.png" alt="TruckBill" height="14" style="vertical-align: middle;">
             <span>TRUCKBILL</span>
           </span>
         </a>
+
         <nav aria-label="Primary Navigation">
           <ul class="nav-desktop-links">
-            <li><a href="index.html">Overview</a></li>
-            <li><a href="features.html">Features</a></li>
+            <li><a href="index.html" class="">Overview</a></li>
+            <li><a href="features.html" class="">Features</a></li>
             <li><a href="solutions.html" class="active">Solutions</a></li>
-            <li><a href="how-it-works.html">How It Works</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="how-it-works.html" class="">How It Works</a></li>
+            <li><a href="pricing.html" class="">Pricing</a></li>
+            <li><a href="faq.html" class="">FAQ</a></li>
+            <li><a href="contact.html" class="">Contact</a></li>
           </ul>
         </nav>
+
         <div class="nav-desktop-cta">
-          <button class="btn-fm btn-fm-teal btn-fm-sm" data-open-demo data-demo-source="solutions_header">
-            BOOK A DEMO
+          <button class="btn-sassy btn-sassy-primary btn-sassy-sm" data-open-demo data-demo-source="header_desktop">
+            <span>Book a Demo</span> <span class="btn-arrow">→</span>
           </button>
         </div>
-        <button class="hamburger-toggle" id="hamburgerBtn" aria-label="Toggle navigation menu">
-          <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+
+        <button class="hamburger-toggle" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
         </button>
       </div>
     </div>
   </header>
 
-  <main>
-    <section class="section-dark" style="padding-top: calc(76px + 4rem); padding-bottom: 3.5rem;">
-      <div class="container-fm">
-        <div class="max-w-700">
-          <span class="eyebrow">TAILORED OPERATING MODELS</span>
-          <h1 class="display-hero text-white mb-3">Software Built for Your Specific Business Model.</h1>
-          <p class="lead-text mb-4">
-            Indian road transport isn't one-size-fits-all. Discover how TruckBill adapts to asset-heavy fleets, hybrid transporters, commission brokers, and parcel networks.
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav-overlay" id="mobileOverlay"></div>
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <div>
+      <div class="d-flex align-items-center justify-content-between mb-4">
+        <img src="assets/images/fleetmores-logo.svg" alt="FLEETMORES" width="150" height="24">
+        <button class="modal-close-btn" id="mobileCloseBtn" aria-label="Close Menu">✕</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class=""><span>Overview</span> <span>→</span></a></li>
+        <li><a href="features.html" class=""><span>Features (12 Engines)</span> <span>→</span></a></li>
+        <li><a href="solutions.html" class="active"><span>Solutions by Segment</span> <span>→</span></a></li>
+        <li><a href="how-it-works.html" class=""><span>How It Works</span> <span>→</span></a></li>
+        <li><a href="pricing.html" class=""><span>Pricing Plans</span> <span>→</span></a></li>
+        <li><a href="faq.html" class=""><span>FAQs</span> <span>→</span></a></li>
+        <li><a href="contact.html" class=""><span>Contact & Schedule</span> <span>→</span></a></li>
+      </ul>
+    </div>
+    <div>
+      <button class="btn-sassy btn-sassy-primary w-100 py-3" data-open-demo data-demo-source="mobile_drawer">
+        <span>Book a Demo</span> <span class="btn-arrow">→</span>
+      </button>
+    </div>
+  </div>
+
+
+  <section class="sassy-hero text-center pb-5">
+    <div class="container-fm">
+      <div class="sassy-badge-pill">
+        <span class="pill-dot"></span>
+        <span>TAILORED LOGISTICS SOLUTIONS</span>
+      </div>
+      <h1 class="sassy-hero-title mx-auto">
+        Tailored Solutions for <span class="text-cobalt">Every Transportation Role</span>
+      </h1>
+      <p class="sassy-hero-desc mx-auto">
+        No two transport businesses operate identically. Select your primary operational model to see how TruckBill solves your daily operational bottlenecks.
+      </p>
+    </div>
+  </section>
+
+  <!-- Solutions Segments -->
+  <section class="fm-section fm-section-ice">
+    <div class="container-fm">
+      <!-- Transporters -->
+      <div class="row align-items-center mb-5 pb-5 border-bottom" id="transporters">
+        <div class="col-12 col-lg-6">
+          <div class="sassy-badge-pill">SOLUTION 01</div>
+          <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">For Transport Contractors & Agencies</h2>
+          <p class="section-desc" style="margin-bottom: 1.5rem;">
+            Serving industrial manufacturers and corporate shippers requires strict billing formats, consolidated monthly invoices, detention tracking, and prompt customer payment collection.
           </p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 2rem; font-size: 1rem; color: #111;">
+            <li>✓ <strong>Contract Rate Cards:</strong> Pre-fill freight rates by lane, vehicle size, and cargo weight.</li>
+            <li>✓ <strong>Multi-LR Monthly Invoicing:</strong> Combine hundreds of dispatches into a clean single tax invoice.</li>
+            <li>✓ <strong>Detention & Unloading Billing:</strong> Automatically append loading/unloading detention slips to final bills.</li>
+            <li>✓ <strong>Automated TDS 194C Calculation:</strong> Keep corporate clients compliant without reconciliation disputes.</li>
+          </ul>
+          <button class="btn-sassy btn-sassy-primary" data-open-demo data-demo-source="sol_contractors">
+            <span>Schedule Contractor Demo</span> <span class="btn-arrow">→</span>
+          </button>
         </div>
-      </div>
-    </section>
-
-    <!-- Transporters Section -->
-    <section class="section-dark-surface py-5" id="transporters">
-      <div class="container-fm">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6">
-            <span class="badge bg-teal text-dark font-monospace mb-2">HYBRID TRANSPORT</span>
-            <h2 class="display-section text-white mb-3">Transporters (Fleet + Market Hires)</h2>
-            <p class="text-muted-dark mb-4">
-              Balance dedicated customer commitments with dynamic market truck hiring. Issue bilties, manage market lorry hire slips (LHS), and reconcile broker balances in real-time.
+        <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+          <div style="background: #FFFFFF; border-radius: 20px; padding: 36px; border: 1px solid var(--fm-border-color); box-shadow: 0 20px 50px rgba(0, 37, 233, 0.08);">
+            <div style="font-size: 0.82rem; color: #767676; font-weight: 700; text-transform: uppercase; margin-bottom: 8px;">Key Metric Unlocked</div>
+            <h3 style="font-size: 2rem; color: var(--fm-primary); font-weight: 800; margin-bottom: 12px;">70% Reduction</h3>
+            <p style="color: var(--fm-body-text); font-size: 0.95rem; line-height: 1.6;">
+              "TruckBill cut our billing cycle from 2 weeks down to 1 day. Invoices reach corporate clients on the 1st of every month without missing a single LR."
             </p>
-            <ul class="control-point-list mb-4">
-              <li class="control-point-item"><span class="control-icon">✓</span> Multi-depot LR creation with unique branch series</li>
-              <li class="control-point-item"><span class="control-icon">✓</span> Market truck hire advance & balance settlement</li>
-              <li class="control-point-item"><span class="control-icon">✓</span> Corporate client consolidated billing & Section 194C TDS</li>
-            </ul>
-            <button class="btn-fm btn-fm-teal btn-fm-sm" data-open-demo data-demo-source="sol_transporter">Book Transporter Demo ➔</button>
-          </div>
-          <div class="col-lg-6">
-            <div class="p-4 rounded-16 bg-dark border border-secondary border-opacity-25 font-monospace small">
-              <div class="text-teal fw-bold mb-2">TRANSPORTER WORKFLOW SNAPSHOT</div>
-              <div class="p-3 bg-secondary bg-opacity-10 rounded mb-2">1. Party Booking ➔ Issue LR #DEL-9012</div>
-              <div class="p-3 bg-secondary bg-opacity-10 rounded mb-2">2. Hire Market Truck ➔ Issue LHS Slip #LHS-4102</div>
-              <div class="p-3 bg-secondary bg-opacity-10 rounded text-teal">3. Net Margin: ₹12,500 locked before truck leaves depot</div>
+            <div style="padding-top: 14px; border-top: 1px solid #E2E8F0; font-size: 0.85rem; font-weight: 600; color: #000;">
+              Used by 220+ Large Transport Agencies Across India
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Fleet Owners Section -->
-    <section class="section-light py-5" id="fleet-owners">
-      <div class="container-fm">
-        <div class="row align-items-center g-5 flex-lg-row-reverse">
-          <div class="col-lg-6">
-            <span class="badge bg-dark text-teal font-monospace mb-2">ASSET-HEAVY</span>
-            <h2 class="display-section text-dark mb-3">Fleet Owners (Dedicated Trucks)</h2>
-            <p class="text-muted-dark mb-4">
-              Maximise vehicle uptime and eliminate fuel leakage. Track vehicle-wise diesel debits, prevent document fines with 30-day alerts, and settle driver advances with audit clarity.
+      <!-- Fleet Owners -->
+      <div class="row align-items-center mb-5 pb-5 border-bottom" id="fleet-owners">
+        <div class="col-12 col-lg-6 order-lg-2">
+          <div class="sassy-badge-pill">SOLUTION 02</div>
+          <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">For Fleet Owners (Own Truck Operators)</h2>
+          <p class="section-desc" style="margin-bottom: 1.5rem;">
+            When you own vehicles, profit is won or lost in diesel management, driver trip advances, tire life, and vehicle turnaround times.
+          </p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 2rem; font-size: 1rem; color: #111;">
+            <li>✓ <strong>Vehicle-Level P&L:</strong> Track exact revenue and all trip expenses per truck every month.</li>
+            <li>✓ <strong>Driver Advance vs Expense Audit:</strong> Reconcile driver cash and pump slips before closing the trip.</li>
+            <li>✓ <strong>Diesel Fuel Mileage Audit:</strong> Detect route fuel leakage and underperforming drivers instantly.</li>
+            <li>✓ <strong>Document Expiry Tracker:</strong> Never pay fines for expired National Permits, Fitness, or Insurance.</li>
+          </ul>
+          <button class="btn-sassy btn-sassy-primary" data-open-demo data-demo-source="sol_fleetowners">
+            <span>Schedule Fleet Owner Demo</span> <span class="btn-arrow">→</span>
+          </button>
+        </div>
+        <div class="col-12 col-lg-6 order-lg-1 mt-4 mt-lg-0">
+          <div style="background: #FFFFFF; border-radius: 20px; padding: 36px; border: 1px solid var(--fm-border-color); box-shadow: 0 20px 50px rgba(0, 37, 233, 0.08);">
+            <div style="font-size: 0.82rem; color: #767676; font-weight: 700; text-transform: uppercase; margin-bottom: 8px;">Key Metric Unlocked</div>
+            <h3 style="font-size: 2rem; color: var(--fm-primary); font-weight: 800; margin-bottom: 12px;">₹ 18,000 Saved / Truck</h3>
+            <p style="color: var(--fm-body-text); font-size: 0.95rem; line-height: 1.6;">
+              "By tracking pump fuel slips and tire serials in TruckBill, we identified 4% unlogged diesel claims within our first two months of deployment."
             </p>
-            <ul class="control-point-list mb-4">
-              <li class="control-point-item"><span class="control-icon">✓</span> Diesel pump credit vouchers & FASTag automated debits</li>
-              <li class="control-point-item"><span class="control-icon">✓</span> Automated document expiry alerts: Fitness, Permit, PUC</li>
-              <li class="control-point-item"><span class="control-icon">✓</span> Vehicle-wise net profitability and cost-per-km</li>
-            </ul>
-            <button class="btn-fm btn-fm-dark btn-fm-sm" data-open-demo data-demo-source="sol_fleetowner">Book Fleet Owner Demo ➔</button>
-          </div>
-          <div class="col-lg-6">
-            <div class="p-4 rounded-16 bg-white border font-monospace small shadow-sm">
-              <div class="text-dark fw-bold mb-2">VEHICLE PROFIT LEDGER (RJ-14-GA-9021)</div>
-              <div class="d-flex justify-content-between p-2 bg-light mb-1"><span>Monthly Freight Revenue:</span> <span class="fw-bold text-dark">₹3,40,000</span></div>
-              <div class="d-flex justify-content-between p-2 bg-light mb-1"><span>Diesel & Toll Expenses:</span> <span class="text-danger">-₹1,82,000</span></div>
-              <div class="d-flex justify-content-between p-2 bg-light mb-1"><span>Driver Advance & Batta:</span> <span class="text-danger">-₹42,000</span></div>
-              <div class="d-flex justify-content-between p-2 bg-teal bg-opacity-10 text-teal fw-bold"><span>Net Vehicle Margin:</span> <span>₹1,16,000 (34.1%)</span></div>
+            <div style="padding-top: 14px; border-top: 1px solid #E2E8F0; font-size: 0.85rem; font-weight: 600; color: #000;">
+              Over 15,000 Commercial Trucks Managed Daily
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Brokers Section -->
-    <section class="section-dark-surface py-5" id="brokers">
-      <div class="container-fm">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6">
-            <span class="badge bg-teal text-dark font-monospace mb-2">ASSET-LIGHT</span>
-            <h2 class="display-section text-white mb-3">Freight Brokers & Transport Agencies</h2>
-            <p class="text-muted-dark mb-4">
-              Coordinate freight orders without owning physical trucks. Match loads with market suppliers, manage party payments vs owner settlements, and lock commission profits.
+      <!-- Commission Agents & Brokers -->
+      <div class="row align-items-center" id="commission-agents">
+        <div class="col-12 col-lg-6">
+          <div class="sassy-badge-pill">SOLUTION 03</div>
+          <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">For Commission Agents & Freight Brokers</h2>
+          <p class="section-desc" style="margin-bottom: 1.5rem;">
+            Hiring market vehicles demands instant rate locks, advance diesel slip management, commission deduction tracking, and tight supplier reconciliation.
+          </p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 2rem; font-size: 1rem; color: #111;">
+            <li>✓ <strong>Dual-Rate Lorry Vouchers:</strong> Log party freight vs truck owner hire rate in one simple entry.</li>
+            <li>✓ <strong>Commission Margin Safeguard:</strong> Instantly calculate gross and net brokerage margins per trip.</li>
+            <li>✓ <strong>WhatsApp Payment Slips:</strong> Send instant balance memos and settlement receipts to truck owners.</li>
+            <li>✓ <strong>Supplier TDS Compliance:</strong> Full recordkeeping for 194C non-deduction declarations (PAN 10-truck rule).</li>
+          </ul>
+          <button class="btn-sassy btn-sassy-primary" data-open-demo data-demo-source="sol_brokers">
+            <span>Schedule Broker Demo</span> <span class="btn-arrow">→</span>
+          </button>
+        </div>
+        <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+          <div style="background: #FFFFFF; border-radius: 20px; padding: 36px; border: 1px solid var(--fm-border-color); box-shadow: 0 20px 50px rgba(0, 37, 233, 0.08);">
+            <div style="font-size: 0.82rem; color: #767676; font-weight: 700; text-transform: uppercase; margin-bottom: 8px;">Key Metric Unlocked</div>
+            <h3 style="font-size: 2rem; color: var(--fm-primary); font-weight: 800; margin-bottom: 12px;">Zero Margin Leakage</h3>
+            <p style="color: var(--fm-body-text); font-size: 0.95rem; line-height: 1.6;">
+              "No more arguments with truck owners over advance payments or diesel slip deductions. Everything is timestamped and verified."
             </p>
-            <ul class="control-point-list mb-4">
-              <li class="control-point-item"><span class="control-icon">✓</span> Instant party freight vs truck owner rate comparison</li>
-              <li class="control-point-item"><span class="control-icon">✓</span> Commission margin tracking per completed trip</li>
-              <li class="control-point-item"><span class="control-icon">✓</span> Separate customer receivables & truck owner payables</li>
-            </ul>
-            <button class="btn-fm btn-fm-teal btn-fm-sm" data-open-demo data-demo-source="sol_broker">Book Broker Demo ➔</button>
-          </div>
-          <div class="col-lg-6">
-            <div class="p-4 rounded-16 bg-dark border border-secondary border-opacity-25 font-monospace small">
-              <div class="text-teal fw-bold mb-2">COMMISSION DISPATCH LEDGER</div>
-              <div class="p-2 mb-2 bg-secondary bg-opacity-10 rounded">Client Freight Rate: ₹75,000</div>
-              <div class="p-2 mb-2 bg-secondary bg-opacity-10 rounded">Market Truck Hire: ₹68,000</div>
-              <div class="p-2 bg-teal bg-opacity-10 text-teal fw-bold rounded">Broker Margin: ₹7,000 (Protected)</div>
+            <div style="padding-top: 14px; border-top: 1px solid #E2E8F0; font-size: 0.85rem; font-weight: 600; color: #000;">
+              Over ₹ 120 Cr in Broker Settlements Reconciled Monthly
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- PTL / Parchun Section -->
-    <section class="section-light py-5" id="ptl">
-      <div class="container-fm">
-        <div class="row align-items-center g-5 flex-lg-row-reverse">
-          <div class="col-lg-6">
-            <span class="badge bg-dark text-teal font-monospace mb-2">PART-LOAD</span>
-            <h2 class="display-section text-dark mb-3">PTL / Parchun Operators</h2>
-            <p class="text-muted-dark mb-4">
-              Manage dozens of part-load consignments per vehicle without losing parcels. Consolidate loading sheets, issue To-Pay and Paid LRs, and reconcile delivery collections.
-            </p>
-            <ul class="control-point-list mb-4">
-              <li class="control-point-item"><span class="control-icon">✓</span> Multi-LR truck loading sheets & manifests</li>
-              <li class="control-point-item"><span class="control-icon">✓</span> To-Pay, Paid, and Billing consignment types</li>
-              <li class="control-point-item"><span class="control-icon">✓</span> Destination branch arrival & delivery reconciliation</li>
-            </ul>
-            <button class="btn-fm btn-fm-dark btn-fm-sm" data-open-demo data-demo-source="sol_ptl">Book PTL Demo ➔</button>
-          </div>
-          <div class="col-lg-6">
-            <div class="p-4 rounded-16 bg-white border font-monospace small shadow-sm">
-              <div class="text-dark fw-bold mb-2">TRUCK MANIFEST (38 LRs Consolidated)</div>
-              <div class="p-2 bg-light mb-1">To-Pay Collections: ₹48,200</div>
-              <div class="p-2 bg-light mb-1">Pre-Paid Bookings: ₹32,000</div>
-              <div class="p-2 bg-teal bg-opacity-10 text-teal fw-bold">Total Manifest Value: ₹80,200</div>
-            </div>
-          </div>
+  <!-- Banner CTA -->
+  <section class="fm-section fm-section-white">
+    <div class="container-fm">
+      <div class="sassy-cobalt-banner text-center">
+        <div style="position: relative; z-index: 1; max-width: 800px; margin: 0 auto; padding: 0 20px;">
+          <h2>Find Out How TruckBill Can Scale Your Operations</h2>
+          <p class="mx-auto">
+            Book a dedicated demo session tailored specifically to your transport business model.
+          </p>
+          <button class="btn-sassy btn-sassy-white btn-sassy-lg" data-open-demo data-demo-source="solutions_bottom_cta">
+            <span>Book a Live Demo</span> <span class="btn-arrow">→</span>
+          </button>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Final CTA -->
-    <section class="section-dark py-5 text-center">
-      <div class="container-fm">
-        <h2 class="display-section text-white mb-3">Ready to transform your transport operations?</h2>
-        <button class="btn-fm btn-fm-teal btn-fm-lg" data-open-demo data-demo-source="solutions_bottom">BOOK A DEMO NOW</button>
-      </div>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
+  <!-- FOOTER (Sassy Deep Black & Cobalt Blue) -->
   <footer class="fm-footer">
     <div class="container-fm">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" aria-label="FleetMores Home">
+            <img src="assets/images/fleetmores-logo-dark.svg" alt="FLEETMORES" width="180" height="28">
+          </a>
+          <p>
+            FleetMores builds <strong>TruckBill</strong> — India's premier transport ERP. Transforming trip dispatch, LR billing, market broker settlements, and TDS compliance for forward-thinking fleets.
+          </p>
+          <div style="margin-top: 1.5rem; display: flex; gap: 12px;">
+            <span class="header-product-badge" style="background: rgba(0, 37, 233, 0.2); border-color: rgba(0, 37, 233, 0.5); color: #ABBBF2;">
+              Flagship Product: TruckBill ERP
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Product Engines</h4>
+          <ul class="footer-links-list">
+            <li><a href="features.html#lr-billing">LR & E-Way Billing</a></li>
+            <li><a href="features.html#dispatch">Trip Dispatch & Tracking</a></li>
+            <li><a href="features.html#broker">Market Vehicle Settlements</a></li>
+            <li><a href="features.html#diesel">Fuel & FASTag Audit</a></li>
+            <li><a href="features.html#invoicing">GST Invoicing & TDS</a></li>
+            <li><a href="features.html">All 12 Modules →</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Solutions</h4>
+          <ul class="footer-links-list">
+            <li><a href="solutions.html#transporters">Transport Contractors</a></li>
+            <li><a href="solutions.html#fleet-owners">Fleet Owners (Own Trucks)</a></li>
+            <li><a href="solutions.html#commission-agents">Commission Agents & Brokers</a></li>
+            <li><a href="solutions.html#logistics-hubs">Logistics Agencies</a></li>
+            <li><a href="how-it-works.html">Interactive Workflow</a></li>
+            <li><a href="pricing.html">ROI Pricing Plans</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Get In Touch</h4>
+          <ul class="footer-links-list">
+            <li><a href="contact.html">Schedule 1-on-1 Demo</a></li>
+            <li><a href="faq.html">Help & FAQs</a></li>
+            <li><a href="tel:+918000553311">+91 8000 553 311</a></li>
+            <li><a href="mailto:contact@fleetmores.com">contact@fleetmores.com</a></li>
+            <li><span style="color: var(--fm-dark-text-muted); font-size: 0.9rem;">Mon – Sat: 9:30 AM – 7:30 PM IST</span></li>
+          </ul>
+        </div>
+      </div>
+
       <div class="footer-bottom">
-        <div>© 2026 FleetMores Technologies. All rights reserved. Flagship product TruckBill ERP.</div>
+        <div>
+          © 2026 FleetMores Technologies. All rights reserved. TruckBill is a registered trademark of FleetMores.
+        </div>
+        <div style="display: flex; gap: 24px;">
+          <a href="contact.html">Privacy Policy</a>
+          <a href="contact.html">Terms of Service</a>
+          <a href="contact.html">Security & Backup</a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- MODAL -->
-  <div class="fm-modal-backdrop" id="demoModal" role="dialog" aria-modal="true">
-    <div class="fm-modal-card">
-      <button class="fm-modal-close" id="closeDemoModal">✕</button>
-      <div id="demoFormContainer">
-        <h3 class="h4 text-white mb-2">Schedule Your TruckBill Demo</h3>
-        <p class="text-muted-dark small mb-3">Tell us about your fleet to see TruckBill live.</p>
-        <form id="fleetmoresDemoForm" novalidate>
-          <div class="fm-form-group"><label class="fm-label">Full Name *</label><input type="text" class="fm-input" name="name" required placeholder="Name"></div>
-          <div class="fm-form-group"><label class="fm-label">Company *</label><input type="text" class="fm-input" name="company" required placeholder="Transport Name"></div>
-          <div class="fm-form-group"><label class="fm-label">Mobile *</label><input type="tel" class="fm-input" name="mobile" required placeholder="Mobile"></div>
-          <button type="submit" class="btn-fm btn-fm-teal w-100 py-3 mt-3">BOOK MY DEMO</button>
-        </form>
+  <!-- DEMO BOOKING MODAL -->
+  <div class="demo-modal-overlay" id="demoModalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalHeading">
+    <div class="demo-modal-card">
+      <div class="modal-header">
+        <div class="sassy-badge-pill mb-2">
+          <span class="pill-dot"></span>
+          <span>LIVE 1-ON-1 PRODUCT DEMO</span>
+        </div>
+        <h3 id="modalHeading" style="font-size: 1.45rem; font-weight: 700; margin-bottom: 4px;">Experience TruckBill in Action</h3>
+        <p style="font-size: 0.9rem; color: var(--fm-muted-text); margin: 0;">See how 500+ transport hubs cut billing time by 70%.</p>
+        <button class="modal-close-btn" data-close-demo aria-label="Close Modal">✕</button>
       </div>
-      <div id="demoSuccessState" style="display: none; text-align: center; padding: 1.5rem 0;">
-        <h3 class="h4 text-white mb-2">Request Confirmed!</h3>
-        <a href="#" id="instantWhatsAppCta" target="_blank" rel="noopener" class="btn-fm btn-fm-teal w-100 py-3">Open WhatsApp Chat</a>
+
+      <div class="modal-body">
+        <form id="demoBookingForm" onsubmit="return handleDemoSubmit(event);">
+          <div class="row g-3">
+            <div class="col-12 col-md-6">
+              <div class="form-group-fm">
+                <label class="form-label-fm" for="demoName">Your Full Name *</label>
+                <input type="text" class="form-input-fm" id="demoName" required placeholder="e.g. Rajesh Sharma">
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group-fm">
+                <label class="form-label-fm" for="demoPhone">Mobile / WhatsApp *</label>
+                <input type="tel" class="form-input-fm" id="demoPhone" required placeholder="e.g. 98765 43210">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group-fm">
+                <label class="form-label-fm" for="demoCompany">Transport Company Name *</label>
+                <input type="text" class="form-input-fm" id="demoCompany" required placeholder="e.g. Sharma Roadways Pvt Ltd">
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group-fm">
+                <label class="form-label-fm" for="demoFleetSize">Fleet / Operational Volume</label>
+                <select class="form-select-fm" id="demoFleetSize">
+                  <option value="1-10">1 – 10 Trucks / LRs per day</option>
+                  <option value="11-30">11 – 30 Trucks</option>
+                  <option value="31-100" selected>31 – 100 Trucks</option>
+                  <option value="100+">100+ Enterprise Fleet</option>
+                  <option value="broker">Broker / Agency (Market Vehicles)</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group-fm">
+                <label class="form-label-fm" for="demoSlot">Preferred Time Slot</label>
+                <select class="form-select-fm" id="demoSlot">
+                  <option value="today-afternoon">Today Afternoon (2:00 PM – 5:00 PM)</option>
+                  <option value="tomorrow-morning">Tomorrow Morning (10:30 AM – 1:00 PM)</option>
+                  <option value="tomorrow-afternoon">Tomorrow Afternoon</option>
+                  <option value="custom">Custom Time (Our team will call you)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px;">
+            <button type="submit" class="btn-sassy btn-sassy-primary w-100 py-3" id="demoSubmitBtn">
+              <span>Confirm Live Demo Booking</span> <span class="btn-arrow">→</span>
+            </button>
+          </div>
+
+          <div style="text-align: center; margin-top: 14px;">
+            <span style="font-size: 0.8rem; color: var(--fm-muted-text);">
+              🔒 100% Free • No Credit Card Required • Instant WhatsApp Confirmation
+            </span>
+          </div>
+        </form>
       </div>
     </div>
   </div>
 
+  <!-- Mobile Sticky Bottom CTA -->
+  <div class="mobile-sticky-cta">
+    <button class="btn-sassy btn-sassy-primary w-100 py-3" data-open-demo data-demo-source="mobile_sticky">
+      <span>Book a Demo</span> <span class="btn-arrow">→</span>
+    </button>
+  </div>
+
+  <!-- Scripts -->
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/interactive.js"></script>
-  <script src="assets/js/analytics.js"></script>
+
 </body>
 </html>

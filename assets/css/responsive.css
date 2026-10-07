@@ -1,9 +1,9 @@
 /* ==========================================================================
-   FLEETMORES — Responsive Styles & Mobile-First Breakpoints
-   Intentional layouts for 360px, 375px, 390px, 768px, 1024px, 1440px
+   FLEETMORES — SASSY HOME-3 RESPONSIVE STYLES
+   Mobile, Tablet, and Desktop Breakpoints
    ========================================================================== */
 
-/* Tablet & Mobile Breakpoint (<= 991px) */
+/* Tablet (<= 991px) */
 @media (max-width: 991px) {
   .nav-desktop-links,
   .nav-desktop-cta {
@@ -14,63 +14,52 @@
     display: flex !important;
   }
 
-  .transformation-flow {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+  .sassy-hero {
+    text-align: center;
+    padding-top: 6.5rem;
   }
 
-  .transformation-arrow {
-    transform: rotate(90deg);
-    margin: 1rem 0;
-  }
-
-  .comparison-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .steps-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .pricing-grid {
-    grid-template-columns: 1fr;
-    max-width: 480px;
+  .sassy-hero-title {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .pricing-card.popular {
-    transform: none;
+  .sassy-hero-desc {
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .features-grid {
-    grid-template-columns: 1fr;
+  .sassy-hero-actions {
+    justify-content: center;
+  }
+
+  .sassy-hero-trust {
+    justify-content: center;
+  }
+
+  .sassy-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .floating-pill-left {
+    left: 0;
+    top: 5%;
+  }
+
+  .floating-pill-right {
+    right: 0;
+    bottom: 5%;
   }
 }
 
-/* Small Tablet & Mobile Breakpoint (<= 768px) */
+/* Small Tablet & Mobile (<= 768px) */
 @media (max-width: 768px) {
-  :root {
-    --section-pad-y: 4rem;
-  }
-
   .header-inner {
-    height: 68px;
+    height: 72px;
   }
 
-  .mobile-nav-drawer {
-    top: 68px;
-  }
-
-  .steps-container {
-    grid-template-columns: 1fr;
-  }
-
-  .fm-form-row {
-    grid-template-columns: 1fr;
-  }
-
-  .sticky-mobile-cta {
+  .mobile-sticky-cta {
     display: block !important;
   }
 
@@ -78,73 +67,62 @@
     padding-bottom: 74px; /* Ensure space for sticky bottom bar */
   }
 
-  .hero-wrapper {
-    padding-top: calc(68px + 2rem);
-    text-align: center;
+  .sassy-card-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 
-  .hero-wrapper .lead-text {
-    margin-left: auto;
-    margin-right: auto;
+  .sassy-cobalt-banner {
+    padding: 3.5rem 1.5rem;
+    border-radius: 20px;
   }
 
-  .hero-wrapper .d-flex {
-    justify-content: center;
-  }
-
-  .trust-strip-inner {
-    justify-content: center;
-    text-align: center;
-  }
-
-  .trust-tags {
-    justify-content: center;
-  }
-
-  .fm-modal-card {
-    padding: 1.6rem 1.25rem;
-    border-radius: 16px;
-  }
-}
-
-/* Compact Mobile Screens (<= 414px: iPhone SE, Galaxy, Pixel) */
-@media (max-width: 414px) {
-  .btn-fm {
-    padding: 0.85rem 1.4rem;
-    font-size: 0.9rem;
+  .floating-pill {
+    position: static;
+    margin-bottom: 12px;
+    animation: none;
     width: 100%;
   }
 
-  .btn-fm-lg {
-    padding: 1rem 1.5rem;
-    font-size: 0.98rem;
+  .sassy-hero-mockup-wrap {
+    margin-top: 2rem;
   }
 
-  .feature-card {
-    padding: 1.5rem 1.25rem;
+  .metrics-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+/* Mobile Screens (<= 480px) */
+@media (max-width: 480px) {
+  .btn-sassy-lg {
+    padding: 13px 24px;
+    font-size: 0.95rem;
+    width: 100%;
   }
 
-  .transformation-card {
-    padding: 1.5rem 1.25rem;
+  .sassy-hero-actions {
+    flex-direction: column;
+    width: 100%;
   }
 
-  .segment-card {
-    padding: 1.5rem 1.25rem;
+  .sassy-hero-actions .btn-sassy {
+    width: 100%;
   }
 
-  .pricing-card {
-    padding: 1.8rem 1.25rem;
+  .metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
-  .console-body {
-    padding: 1rem 0.75rem;
+  .modal-header,
+  .modal-body {
+    padding: 20px 18px;
   }
 
-  .display-hero {
-    font-size: 2.15rem;
-  }
-
-  .display-section {
-    font-size: 1.85rem;
+  .sassy-card {
+    padding: 24px 20px;
+    border-radius: 18px;
   }
 }

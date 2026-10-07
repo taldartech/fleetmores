@@ -3,23 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Features & Operational Engines | FleetMores TruckBill</title>
-  <meta name="description" content="Explore TruckBill's 12 operational engines: trip management, digital LR, freight billing, receivables, fleet expiry, expense tracking, TDS 194C, and settlements.">
+  <title>Features — 12 Specialized Engines of TruckBill ERP | FleetMores</title>
+  <meta name="description" content="Explore TruckBill's 12 specialized operational engines: LR generation, trip dispatch, market vehicle settlement, FASTag & diesel audit, GST billing, and double-entry transport accounting.">
   <link rel="canonical" href="https://fleetmores.com/features.html">
-
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/components.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
-
-  <!-- HEADER -->
+  <!-- HEADER (Sassy Glassmorphic Header) -->
   <header class="fm-header" id="mainHeader">
     <div class="container-fm">
       <div class="header-inner">
         <a href="index.html" class="header-brand-group" aria-label="FleetMores Home">
-          <img src="assets/images/fleetmores-logo.svg" alt="FLEETMORES" width="180" height="26">
+          <img src="assets/images/fleetmores-logo.svg" alt="FLEETMORES" width="180" height="28">
           <span class="header-brand-divider"></span>
           <span class="header-product-badge">
             <img src="assets/images/truckbill-logo.png" alt="TruckBill" height="14" style="vertical-align: middle;">
@@ -29,23 +27,23 @@
 
         <nav aria-label="Primary Navigation">
           <ul class="nav-desktop-links">
-            <li><a href="index.html">Overview</a></li>
+            <li><a href="index.html" class="">Overview</a></li>
             <li><a href="features.html" class="active">Features</a></li>
-            <li><a href="solutions.html">Solutions</a></li>
-            <li><a href="how-it-works.html">How It Works</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="solutions.html" class="">Solutions</a></li>
+            <li><a href="how-it-works.html" class="">How It Works</a></li>
+            <li><a href="pricing.html" class="">Pricing</a></li>
+            <li><a href="faq.html" class="">FAQ</a></li>
+            <li><a href="contact.html" class="">Contact</a></li>
           </ul>
         </nav>
 
         <div class="nav-desktop-cta">
-          <button class="btn-fm btn-fm-teal btn-fm-sm" data-open-demo data-demo-source="features_header">
-            BOOK A DEMO
+          <button class="btn-sassy btn-sassy-primary btn-sassy-sm" data-open-demo data-demo-source="header_desktop">
+            <span>Book a Demo</span> <span class="btn-arrow">→</span>
           </button>
         </div>
 
-        <button class="hamburger-toggle" id="hamburgerBtn" aria-label="Toggle navigation menu">
+        <button class="hamburger-toggle" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -54,328 +52,435 @@
     </div>
   </header>
 
-  <!-- Mobile Drawer -->
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav-overlay" id="mobileOverlay"></div>
   <div class="mobile-nav-drawer" id="mobileDrawer">
     <div>
       <div class="d-flex align-items-center justify-content-between mb-4">
-        <span class="eyebrow mb-0">NAVIGATION</span>
+        <img src="assets/images/fleetmores-logo.svg" alt="FLEETMORES" width="150" height="24">
+        <button class="modal-close-btn" id="mobileCloseBtn" aria-label="Close Menu">✕</button>
       </div>
       <ul class="mobile-nav-links">
-        <li><a href="index.html"><span>Overview</span> <span>→</span></a></li>
-        <li><a href="features.html"><span>Features (12 Engines)</span> <span>→</span></a></li>
-        <li><a href="solutions.html"><span>Solutions by Segment</span> <span>→</span></a></li>
-        <li><a href="how-it-works.html"><span>How It Works</span> <span>→</span></a></li>
-        <li><a href="pricing.html"><span>Pricing Plans</span> <span>→</span></a></li>
-        <li><a href="faq.html"><span>FAQs</span> <span>→</span></a></li>
-        <li><a href="contact.html"><span>Contact & Schedule</span> <span>→</span></a></li>
+        <li><a href="index.html" class=""><span>Overview</span> <span>→</span></a></li>
+        <li><a href="features.html" class="active"><span>Features (12 Engines)</span> <span>→</span></a></li>
+        <li><a href="solutions.html" class=""><span>Solutions by Segment</span> <span>→</span></a></li>
+        <li><a href="how-it-works.html" class=""><span>How It Works</span> <span>→</span></a></li>
+        <li><a href="pricing.html" class=""><span>Pricing Plans</span> <span>→</span></a></li>
+        <li><a href="faq.html" class=""><span>FAQs</span> <span>→</span></a></li>
+        <li><a href="contact.html" class=""><span>Contact & Schedule</span> <span>→</span></a></li>
       </ul>
     </div>
     <div>
-      <button class="btn-fm btn-fm-teal w-100 py-3 mb-2" data-open-demo data-demo-source="features_mobile_drawer">
-        BOOK A DEMO
+      <button class="btn-sassy btn-sassy-primary w-100 py-3" data-open-demo data-demo-source="mobile_drawer">
+        <span>Book a Demo</span> <span class="btn-arrow">→</span>
       </button>
     </div>
   </div>
 
-  <main>
-    <!-- HERO -->
-    <section class="section-dark" style="padding-top: calc(76px + 4rem); padding-bottom: 3.5rem;">
-      <div class="container-fm">
-        <div class="max-w-700">
-          <span class="eyebrow">12 OPERATIONAL ENGINES</span>
-          <h1 class="display-hero text-white mb-3">
-            Engineered for the Realities of Indian Transport.
-          </h1>
-          <p class="lead-text mb-4">
-            Discover how each module of TruckBill connects dispatch, paperwork, billing, expenses, and accounting without double entry.
-          </p>
-          <button class="btn-fm btn-fm-teal btn-fm-lg" data-open-demo data-demo-source="features_hero">
-            SCHEDULE A LIVE ENGINE WALKTHROUGH
-          </button>
-        </div>
+
+  <!-- Hero Header -->
+  <section class="sassy-hero text-center pb-5">
+    <div class="container-fm">
+      <div class="sassy-badge-pill">
+        <span class="pill-dot"></span>
+        <span>COMPLETE PLATFORM ARCHITECTURE</span>
       </div>
-    </section>
-
-    <!-- DETAILED ENGINE BREAKDOWN -->
-    <section class="section-dark-surface py-5">
-      <div class="container-fm">
-        <div class="d-flex flex-column gap-5">
-
-          <!-- 01: Trip Management -->
-          <div class="row align-items-center g-5" id="trip-mgmt">
-            <div class="col-lg-6">
-              <span class="feature-number mb-2 d-inline-block">ENGINE 01</span>
-              <h2 class="display-section text-white mb-2">Trip Management</h2>
-              <p class="text-teal font-monospace mb-3">Know every trip. From start to finish.</p>
-              <p class="text-muted-dark mb-4">
-                Creating trips in TruckBill takes seconds. Assign vehicles, link drivers, record agreed freight terms, and track progress through loading, transit, and delivery.
-              </p>
-              <ul class="control-point-list mb-4">
-                <li class="control-point-item"><span class="control-icon">✓</span> Single-screen dispatch form for owned & hired trucks</li>
-                <li class="control-point-item"><span class="control-icon">✓</span> Multi-point pickup and drop sequence mapping</li>
-                <li class="control-point-item"><span class="control-icon">✓</span> Live transit status: Loading, In-Transit, POD Pending, Settled</li>
-                <li class="control-point-item"><span class="control-icon">✓</span> En-route diesel debit, toll deduction and driver advance</li>
-              </ul>
-              <button class="btn-fm btn-fm-teal btn-fm-sm" data-open-demo data-demo-source="feature_01">See Trip Demo ➔</button>
-            </div>
-            <div class="col-lg-6">
-              <div class="p-4 rounded-16 bg-dark border border-secondary border-opacity-25">
-                <div class="d-flex justify-content-between text-muted-dark font-monospace small mb-3">
-                  <span>DISPATCH VOUCHER #DIS-2026-9041</span>
-                  <span class="status-badge-green">LIVE IN TRANSIT</span>
-                </div>
-                <div class="p-3 bg-secondary bg-opacity-10 rounded-8 mb-3">
-                  <div class="text-white fw-bold mb-1">Gurgaon Logistics Park ➔ Sanand Auto Hub</div>
-                  <div class="small text-muted-dark font-monospace">Truck: RJ-14-GA-9021 • Driver: Vikram Singh (98290-XXXXX)</div>
-                </div>
-                <div class="row g-2 font-monospace small text-center">
-                  <div class="col-4 p-2 bg-dark rounded border border-secondary border-opacity-25">
-                    <div class="text-muted-dark" style="font-size: 0.68rem;">FREIGHT</div>
-                    <div class="text-white fw-bold">₹82,000</div>
-                  </div>
-                  <div class="col-4 p-2 bg-dark rounded border border-secondary border-opacity-25">
-                    <div class="text-muted-dark" style="font-size: 0.68rem;">ADVANCE</div>
-                    <div class="text-danger fw-bold">₹28,000</div>
-                  </div>
-                  <div class="col-4 p-2 bg-dark rounded border border-secondary border-opacity-25">
-                    <div class="text-muted-dark" style="font-size: 0.68rem;">BALANCE</div>
-                    <div class="text-teal fw-bold">₹54,000</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <hr class="border-secondary border-opacity-25 my-4">
-
-          <!-- 02: Freight Billing -->
-          <div class="row align-items-center g-5 flex-lg-row-reverse" id="billing">
-            <div class="col-lg-6">
-              <span class="feature-number mb-2 d-inline-block">ENGINE 02</span>
-              <h2 class="display-section text-white mb-2">Freight Billing</h2>
-              <p class="text-teal font-monospace mb-3">Turn every trip into a clean, accurate bill.</p>
-              <p class="text-muted-dark mb-4">
-                Stop spending weekends calculating detention, loading deductions, and GST percentages. Generate professional GST freight invoices in 1 click directly from completed LRs.
-              </p>
-              <ul class="control-point-list mb-4">
-                <li class="control-point-item"><span class="control-icon">✓</span> Multi-LR consolidated freight invoices for corporate clients</li>
-                <li class="control-point-item"><span class="control-icon">✓</span> Automatic Section 194C TDS deduction & accounting credit</li>
-                <li class="control-point-item"><span class="control-icon">✓</span> Forward Charge (FCM) and Reverse Charge (RCM) billing</li>
-                <li class="control-point-item"><span class="control-icon">✓</span> Customized invoice formats with company letterhead & bank QR</li>
-              </ul>
-              <button class="btn-fm btn-fm-teal btn-fm-sm" data-open-demo data-demo-source="feature_02">See Billing Demo ➔</button>
-            </div>
-            <div class="col-lg-6">
-              <div class="p-4 rounded-16 bg-dark border border-secondary border-opacity-25">
-                <div class="d-flex justify-content-between text-muted-dark font-monospace small mb-2">
-                  <span>TAX INVOICE #TB-INV-8120</span>
-                  <span class="text-teal">GST Compliant</span>
-                </div>
-                <div class="text-white fw-bold mb-3">Client: Ultratech Cement Limited</div>
-                <div class="p-3 bg-secondary bg-opacity-10 rounded-8 font-monospace small mb-3">
-                  <div class="d-flex justify-content-between mb-1 text-muted-dark"><span>Freight (4x Consignments):</span> <span class="text-white">₹3,42,000</span></div>
-                  <div class="d-flex justify-content-between mb-1 text-muted-dark"><span>Detention / Halting:</span> <span class="text-white">₹8,000</span></div>
-                  <div class="d-flex justify-content-between mb-1 text-muted-dark"><span>IGST @ 5%:</span> <span class="text-white">₹17,500</span></div>
-                  <div class="d-flex justify-content-between mb-1 text-teal"><span>TDS 194C @ 2%:</span> <span>-₹7,000</span></div>
-                  <div class="d-flex justify-content-between pt-2 border-top border-secondary text-white fw-bold"><span>Total Net Receivable:</span> <span class="text-teal">₹3,60,500</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <hr class="border-secondary border-opacity-25 my-4">
-
-          <!-- 03: LR & Bilty -->
-          <div class="row align-items-center g-5" id="lr-bilty">
-            <div class="col-lg-6">
-              <span class="feature-number mb-2 d-inline-block">ENGINE 03</span>
-              <h2 class="display-section text-white mb-2">LR / Bilty Generation</h2>
-              <p class="text-teal font-monospace mb-3">Create LR and Bilty without the paperwork.</p>
-              <p class="text-muted-dark mb-4">
-                Eliminate handwriting errors, lost carbon copies, and branch delays. Create standard Indian Lorry Receipts with sequential numbering and send PDF bilties to customers via WhatsApp instantly.
-              </p>
-              <ul class="control-point-list mb-4">
-                <li class="control-point-item"><span class="control-icon">✓</span> Multi-format printing: A4, Half-Page, and Continuous Roll</li>
-                <li class="control-point-item"><span class="control-icon">✓</span> Pre-filled party masters for consignor & consignee GSTIN</li>
-                <li class="control-point-item"><span class="control-icon">✓</span> To-Pay, Paid, and To-Be-Billed payment models</li>
-                <li class="control-point-item"><span class="control-icon">✓</span> Digital signature stamp and company authorization seal</li>
-              </ul>
-              <button class="btn-fm btn-fm-teal btn-fm-sm" data-open-demo data-demo-source="feature_03">See LR Demo ➔</button>
-            </div>
-            <div class="col-lg-6">
-              <div class="p-4 rounded-16 bg-dark border border-secondary border-opacity-25 font-monospace small">
-                <div class="text-center pb-2 mb-3 border-bottom border-secondary">
-                  <div class="text-white fw-bold fs-6">LORRY RECEIPT (CONSIGNMENT NOTE)</div>
-                  <div class="text-teal">LR NO: #LR-DEL-2026-4412</div>
-                </div>
-                <div class="row g-2 mb-3 text-muted-dark">
-                  <div class="col-6"><strong>Consignor:</strong> Tata Steel Limited</div>
-                  <div class="col-6"><strong>Consignee:</strong> JSW Infra Depot</div>
-                  <div class="col-6"><strong>Vehicle:</strong> NL-01-AB-8802</div>
-                  <div class="col-6"><strong>Packages:</strong> 42 Coils (28.4 MT)</div>
-                </div>
-                <div class="p-2 bg-secondary bg-opacity-10 rounded text-center text-teal">
-                  ✓ Digital PDF Generated • Ready for Direct WhatsApp Dispatch
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <hr class="border-secondary border-opacity-25 my-4">
-
-          <!-- 04: Receivables & Settlements -->
-          <div class="row align-items-center g-5 flex-lg-row-reverse" id="receivables">
-            <div class="col-lg-6">
-              <span class="feature-number mb-2 d-inline-block">ENGINE 04 & 07</span>
-              <h2 class="display-section text-white mb-2">Receivables & Settlements</h2>
-              <p class="text-teal font-monospace mb-3">Know who owes you money. Settle who you owe.</p>
-              <p class="text-muted-dark mb-4">
-                TruckBill brings complete financial clarity. Track client aging balances with overdue badges, and settle drivers and market truck owners with accurate fuel, advance, and batta debits.
-              </p>
-              <ul class="control-point-list mb-4">
-                <li class="control-point-item"><span class="control-icon">✓</span> Party aging buckets (0-15d, 16-30d, 31-60d, >60d)</li>
-                <li class="control-point-item"><span class="control-icon">✓</span> Market lorry hire slip (LHS) settlements</li>
-                <li class="control-point-item"><span class="control-icon">✓</span> Driver trip balance calculation & cash settlement vouchers</li>
-                <li class="control-point-item"><span class="control-icon">✓</span> Direct WhatsApp payment reminder triggers</li>
-              </ul>
-              <button class="btn-fm btn-fm-teal btn-fm-sm" data-open-demo data-demo-source="feature_04">See Receivables Demo ➔</button>
-            </div>
-            <div class="col-lg-6">
-              <div class="p-4 rounded-16 bg-dark border border-secondary border-opacity-25 font-monospace small">
-                <h5 class="text-white fw-bold mb-3">Party Aging Snapshot</h5>
-                <div class="d-flex justify-content-between p-2 mb-2 rounded bg-secondary bg-opacity-10">
-                  <span class="text-white">Current (0-15 Days):</span>
-                  <span class="text-teal fw-bold">₹12,40,000 (Normal)</span>
-                </div>
-                <div class="d-flex justify-content-between p-2 mb-2 rounded bg-secondary bg-opacity-10">
-                  <span class="text-white">16-30 Days:</span>
-                  <span class="text-warning fw-bold">₹4,20,000 (Follow Up)</span>
-                </div>
-                <div class="d-flex justify-content-between p-2 rounded bg-danger bg-opacity-15">
-                  <span class="text-white">>60 Days (Overdue):</span>
-                  <span class="text-danger fw-bold">₹1,80,000 (Send Notice)</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="text-center mt-5">
-          <button class="btn-fm btn-fm-teal btn-fm-lg" data-open-demo data-demo-source="features_bottom">
-            SCHEDULE A COMPLETE PLATFORM DEMO
-          </button>
-        </div>
+      <h1 class="sassy-hero-title mx-auto">
+        12 Specialized Engines for <span class="text-cobalt">Flawless Transport Operations</span>
+      </h1>
+      <p class="sassy-hero-desc mx-auto">
+        Every button, report, and ledger rule in TruckBill has been engineered around actual Indian transport customs — from loading yard slips to multi-branch audit.
+      </p>
+      <div class="d-flex justify-content-center gap-3">
+        <button class="btn-sassy btn-sassy-primary btn-sassy-lg" data-open-demo data-demo-source="features_hero">
+          <span>Book a Live Demo</span> <span class="btn-arrow">→</span>
+        </button>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <!-- FOOTER -->
-  <footer class="fm-footer">
+  <!-- 12 Engines Detailed Section -->
+  <section class="fm-section fm-section-ice" id="all-features">
     <div class="container-fm">
       <div class="row g-4">
-        <div class="col-lg-4 col-md-6">
-          <a href="index.html" class="d-inline-flex align-items-center gap-2 mb-3 text-decoration-none">
-            <img src="assets/images/fleetmores-logo.svg" alt="FLEETMORES" width="170" height="24">
-          </a>
-          <p class="text-muted-dark small mb-3">
-            FleetMores builds smart software for smarter transport businesses. Powering TruckBill ERP for Indian logistics.
+        <!-- Engine 01 -->
+        <div class="col-12 col-md-6 col-lg-4" id="lr-billing">
+          <div class="sassy-card h-100">
+            <div>
+              <div class="sassy-card-top">
+                <div class="sassy-card-icon">01</div>
+                <span class="sassy-card-num">CORE</span>
+              </div>
+              <h3 class="sassy-card-title">Digital LR & Bilty Engine</h3>
+              <p class="sassy-card-text">
+                Generate professional Lorry Receipts matching your pre-printed stationery. Auto-consignment numbers, GST tax-breakdown, multi-item descriptions, and instant WhatsApp PDF sharing.
+              </p>
+            </div>
+            <button class="btn-sassy btn-sassy-outline btn-sassy-sm mt-3" data-open-demo data-demo-source="feat_lr">See LR Demo →</button>
+          </div>
+        </div>
+
+        <!-- Engine 02 -->
+        <div class="col-12 col-md-6 col-lg-4" id="dispatch">
+          <div class="sassy-card h-100">
+            <div>
+              <div class="sassy-card-top">
+                <div class="sassy-card-icon">02</div>
+                <span class="sassy-card-num">CORE</span>
+              </div>
+              <h3 class="sassy-card-title">Trip Dispatch & Allocation</h3>
+              <p class="sassy-card-text">
+                Allocate own fleet, attached trucks, or market broker vehicles. Generate Loading Slips, record driver credentials, assign route rates, and issue vehicle gate passes seamlessly.
+              </p>
+            </div>
+            <button class="btn-sassy btn-sassy-outline btn-sassy-sm mt-3" data-open-demo data-demo-source="feat_dispatch">See Dispatch Demo →</button>
+          </div>
+        </div>
+
+        <!-- Engine 03 -->
+        <div class="col-12 col-md-6 col-lg-4" id="broker">
+          <div class="sassy-card h-100">
+            <div>
+              <div class="sassy-card-top">
+                <div class="sassy-card-icon">03</div>
+                <span class="sassy-card-num">CRITICAL</span>
+              </div>
+              <h3 class="sassy-card-title">Market Lorry & Broker Settlements</h3>
+              <p class="sassy-card-text">
+                Track lorry hire agreements, diesel advance slips, cash advances, broker commissions, and final balances. Generate transparent Lorry Hire Vouchers without ledger confusion.
+              </p>
+            </div>
+            <button class="btn-sassy btn-sassy-outline btn-sassy-sm mt-3" data-open-demo data-demo-source="feat_broker">See Settlement Demo →</button>
+          </div>
+        </div>
+
+        <!-- Engine 04 -->
+        <div class="col-12 col-md-6 col-lg-4" id="invoicing">
+          <div class="sassy-card h-100">
+            <div>
+              <div class="sassy-card-top">
+                <div class="sassy-card-icon">04</div>
+                <span class="sassy-card-num">FINANCE</span>
+              </div>
+              <h3 class="sassy-card-title">Customer Invoicing & Bill Registers</h3>
+              <p class="sassy-card-text">
+                Generate single-LR or consolidated monthly multi-LR freight invoices. Add detention charges, unloading deductions, and automatic Section 194C TDS calculation.
+              </p>
+            </div>
+            <button class="btn-sassy btn-sassy-outline btn-sassy-sm mt-3" data-open-demo data-demo-source="feat_invoice">See Invoicing Demo →</button>
+          </div>
+        </div>
+
+        <!-- Engine 05 -->
+        <div class="col-12 col-md-6 col-lg-4" id="diesel">
+          <div class="sassy-card h-100">
+            <div>
+              <div class="sassy-card-top">
+                <div class="sassy-card-icon">05</div>
+                <span class="sassy-card-num">AUDIT</span>
+              </div>
+              <h3 class="sassy-card-title">Diesel Pump Slip & FASTag Audit</h3>
+              <p class="sassy-card-text">
+                Directly audit petrol pump credit slips and FASTag tolls against corresponding trips. Prevent diesel theft, audit driver mileage, and settle pump accounts monthly.
+              </p>
+            </div>
+            <button class="btn-sassy btn-sassy-outline btn-sassy-sm mt-3" data-open-demo data-demo-source="feat_diesel">See Fuel Demo →</button>
+          </div>
+        </div>
+
+        <!-- Engine 06 -->
+        <div class="col-12 col-md-6 col-lg-4" id="pod">
+          <div class="sassy-card h-100">
+            <div>
+              <div class="sassy-card-top">
+                <div class="sassy-card-icon">06</div>
+                <span class="sassy-card-num">COLLECTIONS</span>
+              </div>
+              <h3 class="sassy-card-title">Mobile POD Capture & Receiving</h3>
+              <p class="sassy-card-text">
+                Drivers snap clear photos of stamped Proof of Delivery at delivery points. Automatically marks delivery complete, notifies client, and unblocks invoice submission.
+              </p>
+            </div>
+            <button class="btn-sassy btn-sassy-outline btn-sassy-sm mt-3" data-open-demo data-demo-source="feat_pod">See POD Demo →</button>
+          </div>
+        </div>
+
+        <!-- Engine 07 -->
+        <div class="col-12 col-md-6 col-lg-4" id="ledger">
+          <div class="sassy-card h-100">
+            <div>
+              <div class="sassy-card-top">
+                <div class="sassy-card-icon">07</div>
+                <span class="sassy-card-num">ACCOUNTING</span>
+              </div>
+              <h3 class="sassy-card-title">Double-Entry Party & Broker Ledgers</h3>
+              <p class="sassy-card-text">
+                A complete transport accounting suite. Customer khata, broker accounts, supplier ledgers, cash book, and bank reconciliation designed specifically for transport operators.
+              </p>
+            </div>
+            <button class="btn-sassy btn-sassy-outline btn-sassy-sm mt-3" data-open-demo data-demo-source="feat_ledger">See Ledger Demo →</button>
+          </div>
+        </div>
+
+        <!-- Engine 08 -->
+        <div class="col-12 col-md-6 col-lg-4" id="fleet-pnl">
+          <div class="sassy-card h-100">
+            <div>
+              <div class="sassy-card-top">
+                <div class="sassy-card-icon">08</div>
+                <span class="sassy-card-num">ANALYTICS</span>
+              </div>
+              <h3 class="sassy-card-title">Vehicle-Wise Net Profit & Loss (P&L)</h3>
+              <p class="sassy-card-text">
+                Track revenue, diesel cost, driver wages, toll expenses, maintenance, and EMI per vehicle. Know which trucks generate profit and which are burning cash.
+              </p>
+            </div>
+            <button class="btn-sassy btn-sassy-outline btn-sassy-sm mt-3" data-open-demo data-demo-source="feat_pnl">See P&L Demo →</button>
+          </div>
+        </div>
+
+        <!-- Engine 09 -->
+        <div class="col-12 col-md-6 col-lg-4" id="driver-app">
+          <div class="sassy-card h-100">
+            <div>
+              <div class="sassy-card-top">
+                <div class="sassy-card-icon">09</div>
+                <span class="sassy-card-num">OPS</span>
+              </div>
+              <h3 class="sassy-card-title">Driver Trip Passbook & Advances</h3>
+              <p class="sassy-card-text">
+                Simple driver smartphone view for trip details, advance vouchers, diesel slips, and POD uploads. Prevents trip allowance disputes and improves driver trust.
+              </p>
+            </div>
+            <button class="btn-sassy btn-sassy-outline btn-sassy-sm mt-3" data-open-demo data-demo-source="feat_driver">See Driver Demo →</button>
+          </div>
+        </div>
+
+        <!-- Engine 10 -->
+        <div class="col-12 col-md-6 col-lg-4" id="compliance">
+          <div class="sassy-card h-100">
+            <div>
+              <div class="sassy-card-top">
+                <div class="sassy-card-icon">10</div>
+                <span class="sassy-card-num">LEGAL</span>
+              </div>
+              <h3 class="sassy-card-title">Permit, Fitness & Insurance Alerts</h3>
+              <p class="sassy-card-text">
+                Automated expiry notifications for National Permits, Fitness Certificates, State Taxes, PUC, and Insurance policies before costly challans hit your fleet.
+              </p>
+            </div>
+            <button class="btn-sassy btn-sassy-outline btn-sassy-sm mt-3" data-open-demo data-demo-source="feat_permit">See Alerts Demo →</button>
+          </div>
+        </div>
+
+        <!-- Engine 11 -->
+        <div class="col-12 col-md-6 col-lg-4" id="multi-branch">
+          <div class="sassy-card h-100">
+            <div>
+              <div class="sassy-card-top">
+                <div class="sassy-card-icon">11</div>
+                <span class="sassy-card-num">ENTERPRISE</span>
+              </div>
+              <h3 class="sassy-card-title">Multi-Branch & Hub Hierarchy</h3>
+              <p class="sassy-card-text">
+                Connect your head office with branch loading points and delivery hubs across India. Role-based permissions, branch-specific LR series, and unified financial oversight.
+              </p>
+            </div>
+            <button class="btn-sassy btn-sassy-outline btn-sassy-sm mt-3" data-open-demo data-demo-source="feat_branch">See Branch Demo →</button>
+          </div>
+        </div>
+
+        <!-- Engine 12 -->
+        <div class="col-12 col-md-6 col-lg-4" id="whatsapp-bot">
+          <div class="sassy-card h-100">
+            <div>
+              <div class="sassy-card-top">
+                <div class="sassy-card-icon">12</div>
+                <span class="sassy-card-num">AUTOMATION</span>
+              </div>
+              <h3 class="sassy-card-title">WhatsApp Business Intelligence</h3>
+              <p class="sassy-card-text">
+                Direct WhatsApp integration for sending LRs, tracking links, automated overdue invoice reminders, and balance ledger statements with zero manual typing.
+              </p>
+            </div>
+            <button class="btn-sassy btn-sassy-outline btn-sassy-sm mt-3" data-open-demo data-demo-source="feat_whatsapp">See WhatsApp Demo →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner CTA -->
+  <section class="fm-section fm-section-white">
+    <div class="container-fm">
+      <div class="sassy-cobalt-banner text-center">
+        <div style="position: relative; z-index: 1; max-width: 800px; margin: 0 auto; padding: 0 20px;">
+          <h2>Ready to See All 12 Engines in a Live Walkthrough?</h2>
+          <p class="mx-auto">
+            Book a 20-minute tailored session with our product specialist. We will show you how TruckBill replaces spreadsheets and cuts hours of administrative effort every day.
           </p>
+          <div class="d-flex align-items-center justify-content-center flex-wrap gap-3">
+            <button class="btn-sassy btn-sassy-white btn-sassy-lg" data-open-demo data-demo-source="features_bottom_cta">
+              <span>Book a Live Demo</span> <span class="btn-arrow">→</span>
+            </button>
+          </div>
         </div>
-        <div class="col-lg-2 col-md-3 col-6">
-          <div class="footer-heading">Product</div>
-          <ul class="footer-links">
-            <li><a href="features.html">All 12 Features</a></li>
-            <li><a href="pricing.html">Pricing Plans</a></li>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (Sassy Deep Black & Cobalt Blue) -->
+  <footer class="fm-footer">
+    <div class="container-fm">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" aria-label="FleetMores Home">
+            <img src="assets/images/fleetmores-logo-dark.svg" alt="FLEETMORES" width="180" height="28">
+          </a>
+          <p>
+            FleetMores builds <strong>TruckBill</strong> — India's premier transport ERP. Transforming trip dispatch, LR billing, market broker settlements, and TDS compliance for forward-thinking fleets.
+          </p>
+          <div style="margin-top: 1.5rem; display: flex; gap: 12px;">
+            <span class="header-product-badge" style="background: rgba(0, 37, 233, 0.2); border-color: rgba(0, 37, 233, 0.5); color: #ABBBF2;">
+              Flagship Product: TruckBill ERP
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Product Engines</h4>
+          <ul class="footer-links-list">
+            <li><a href="features.html#lr-billing">LR & E-Way Billing</a></li>
+            <li><a href="features.html#dispatch">Trip Dispatch & Tracking</a></li>
+            <li><a href="features.html#broker">Market Vehicle Settlements</a></li>
+            <li><a href="features.html#diesel">Fuel & FASTag Audit</a></li>
+            <li><a href="features.html#invoicing">GST Invoicing & TDS</a></li>
+            <li><a href="features.html">All 12 Modules →</a></li>
           </ul>
         </div>
-        <div class="col-lg-2 col-md-3 col-6">
-          <div class="footer-heading">Solutions</div>
-          <ul class="footer-links">
-            <li><a href="solutions.html#transporters">Transporters</a></li>
-            <li><a href="solutions.html#fleet-owners">Fleet Owners</a></li>
+
+        <div>
+          <h4 class="footer-col-title">Solutions</h4>
+          <ul class="footer-links-list">
+            <li><a href="solutions.html#transporters">Transport Contractors</a></li>
+            <li><a href="solutions.html#fleet-owners">Fleet Owners (Own Trucks)</a></li>
+            <li><a href="solutions.html#commission-agents">Commission Agents & Brokers</a></li>
+            <li><a href="solutions.html#logistics-hubs">Logistics Agencies</a></li>
+            <li><a href="how-it-works.html">Interactive Workflow</a></li>
+            <li><a href="pricing.html">ROI Pricing Plans</a></li>
           </ul>
         </div>
-        <div class="col-lg-2 col-md-3 col-6">
-          <div class="footer-heading">Resources</div>
-          <ul class="footer-links">
-            <li><a href="faq.html">FAQs</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-2 col-md-3 col-6">
-          <div class="footer-heading">Direct Connect</div>
-          <ul class="footer-links">
-            <li><a href="tel:+919820000000">+91 98200 00000</a></li>
+
+        <div>
+          <h4 class="footer-col-title">Get In Touch</h4>
+          <ul class="footer-links-list">
+            <li><a href="contact.html">Schedule 1-on-1 Demo</a></li>
+            <li><a href="faq.html">Help & FAQs</a></li>
+            <li><a href="tel:+918000553311">+91 8000 553 311</a></li>
             <li><a href="mailto:contact@fleetmores.com">contact@fleetmores.com</a></li>
+            <li><span style="color: var(--fm-dark-text-muted); font-size: 0.9rem;">Mon – Sat: 9:30 AM – 7:30 PM IST</span></li>
           </ul>
         </div>
       </div>
+
       <div class="footer-bottom">
-        <div>© 2026 FleetMores Technologies. All rights reserved. Flagship product TruckBill ERP.</div>
+        <div>
+          © 2026 FleetMores Technologies. All rights reserved. TruckBill is a registered trademark of FleetMores.
+        </div>
+        <div style="display: flex; gap: 24px;">
+          <a href="contact.html">Privacy Policy</a>
+          <a href="contact.html">Terms of Service</a>
+          <a href="contact.html">Security & Backup</a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- STICKY MOBILE CTA -->
-  <aside class="sticky-mobile-cta">
-    <div class="d-flex align-items-center justify-content-between gap-2">
-      <button class="btn-fm btn-fm-teal w-100 py-2 small" data-open-demo data-demo-source="sticky_mobile">
-        BOOK A DEMO
-      </button>
-      <a href="https://wa.me/919820000000" target="_blank" rel="noopener" class="btn-fm btn-fm-outline-light py-2 px-3 small">
-        WhatsApp
-      </a>
-    </div>
-  </aside>
-
-  <!-- MODAL -->
-  <div class="fm-modal-backdrop" id="demoModal" role="dialog" aria-modal="true">
-    <div class="fm-modal-card">
-      <button class="fm-modal-close" id="closeDemoModal">✕</button>
-      <div id="demoFormContainer">
-        <span class="eyebrow mb-1">SCHEDULE WALKTHROUGH</span>
-        <h3 class="h4 text-white mb-2">See TruckBill in Action</h3>
-        <p class="text-muted-dark small mb-4">Tell us about your transport business and see TruckBill live.</p>
-        <form id="fleetmoresDemoForm" novalidate>
-          <div class="fm-form-row">
-            <div class="fm-form-group">
-              <label class="fm-label">Your Name *</label>
-              <input type="text" class="fm-input" name="name" required placeholder="Full Name">
-            </div>
-            <div class="fm-form-group">
-              <label class="fm-label">Company Name *</label>
-              <input type="text" class="fm-input" name="company" required placeholder="Company Name">
-            </div>
-          </div>
-          <div class="fm-form-row">
-            <div class="fm-form-group">
-              <label class="fm-label">Mobile Number *</label>
-              <input type="tel" class="fm-input" name="mobile" required placeholder="10-digit Mobile">
-            </div>
-            <div class="fm-form-group">
-              <label class="fm-label">Vehicle Count</label>
-              <select class="fm-select" name="vehicleCount">
-                <option value="1-5 Vehicles">1 - 5 Vehicles</option>
-                <option value="6-20 Vehicles">6 - 20 Vehicles</option>
-                <option value="21-50 Vehicles">21 - 50 Vehicles</option>
-                <option value="50+ Vehicles">50+ Vehicles</option>
-              </select>
-            </div>
-          </div>
-          <button type="submit" class="btn-fm btn-fm-teal w-100 py-3 mt-3">BOOK MY DEMO</button>
-        </form>
+  <!-- DEMO BOOKING MODAL -->
+  <div class="demo-modal-overlay" id="demoModalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalHeading">
+    <div class="demo-modal-card">
+      <div class="modal-header">
+        <div class="sassy-badge-pill mb-2">
+          <span class="pill-dot"></span>
+          <span>LIVE 1-ON-1 PRODUCT DEMO</span>
+        </div>
+        <h3 id="modalHeading" style="font-size: 1.45rem; font-weight: 700; margin-bottom: 4px;">Experience TruckBill in Action</h3>
+        <p style="font-size: 0.9rem; color: var(--fm-muted-text); margin: 0;">See how 500+ transport hubs cut billing time by 70%.</p>
+        <button class="modal-close-btn" data-close-demo aria-label="Close Modal">✕</button>
       </div>
-      <div id="demoSuccessState" style="display: none; text-align: center; padding: 1.5rem 0;">
-        <div style="font-size: 2rem; color: var(--fm-teal); margin-bottom: 0.5rem;">✓</div>
-        <h3 class="h4 text-white mb-2">Demo Request Confirmed!</h3>
-        <a href="#" id="instantWhatsAppCta" target="_blank" rel="noopener" class="btn-fm btn-fm-teal w-100 py-3">Chat on WhatsApp</a>
+
+      <div class="modal-body">
+        <form id="demoBookingForm" onsubmit="return handleDemoSubmit(event);">
+          <div class="row g-3">
+            <div class="col-12 col-md-6">
+              <div class="form-group-fm">
+                <label class="form-label-fm" for="demoName">Your Full Name *</label>
+                <input type="text" class="form-input-fm" id="demoName" required placeholder="e.g. Rajesh Sharma">
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group-fm">
+                <label class="form-label-fm" for="demoPhone">Mobile / WhatsApp *</label>
+                <input type="tel" class="form-input-fm" id="demoPhone" required placeholder="e.g. 98765 43210">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group-fm">
+                <label class="form-label-fm" for="demoCompany">Transport Company Name *</label>
+                <input type="text" class="form-input-fm" id="demoCompany" required placeholder="e.g. Sharma Roadways Pvt Ltd">
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group-fm">
+                <label class="form-label-fm" for="demoFleetSize">Fleet / Operational Volume</label>
+                <select class="form-select-fm" id="demoFleetSize">
+                  <option value="1-10">1 – 10 Trucks / LRs per day</option>
+                  <option value="11-30">11 – 30 Trucks</option>
+                  <option value="31-100" selected>31 – 100 Trucks</option>
+                  <option value="100+">100+ Enterprise Fleet</option>
+                  <option value="broker">Broker / Agency (Market Vehicles)</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group-fm">
+                <label class="form-label-fm" for="demoSlot">Preferred Time Slot</label>
+                <select class="form-select-fm" id="demoSlot">
+                  <option value="today-afternoon">Today Afternoon (2:00 PM – 5:00 PM)</option>
+                  <option value="tomorrow-morning">Tomorrow Morning (10:30 AM – 1:00 PM)</option>
+                  <option value="tomorrow-afternoon">Tomorrow Afternoon</option>
+                  <option value="custom">Custom Time (Our team will call you)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px;">
+            <button type="submit" class="btn-sassy btn-sassy-primary w-100 py-3" id="demoSubmitBtn">
+              <span>Confirm Live Demo Booking</span> <span class="btn-arrow">→</span>
+            </button>
+          </div>
+
+          <div style="text-align: center; margin-top: 14px;">
+            <span style="font-size: 0.8rem; color: var(--fm-muted-text);">
+              🔒 100% Free • No Credit Card Required • Instant WhatsApp Confirmation
+            </span>
+          </div>
+        </form>
       </div>
     </div>
   </div>
 
+  <!-- Mobile Sticky Bottom CTA -->
+  <div class="mobile-sticky-cta">
+    <button class="btn-sassy btn-sassy-primary w-100 py-3" data-open-demo data-demo-source="mobile_sticky">
+      <span>Book a Demo</span> <span class="btn-arrow">→</span>
+    </button>
+  </div>
+
+  <!-- Scripts -->
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/interactive.js"></script>
-  <script src="assets/js/analytics.js"></script>
+
 </body>
 </html>
