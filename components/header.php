@@ -1,29 +1,29 @@
 <?php
-if (!isset()) {
-     = 'home';
+if (!isset($activePage)) {
+    $activePage = 'home';
 }
 ?>
 <header class="fm-header" id="mainHeader">
   <div class="container-fm">
     <div class="header-inner">
       <a href="index.html" class="header-brand-group" aria-label="FleetMores Home">
-        <img src="assets/images/fleetmores-logo.svg" alt="FLEETMORES" width="180" height="28">
+        <img src="assets/images/fleetmores-logo.svg" alt="FLEETMORES" class="brand-logo-img" width="180" height="28">
         <span class="header-brand-divider"></span>
         <span class="header-product-badge">
-          <img src="assets/images/truckbill-logo.png" alt="TruckBill" height="14" style="vertical-align: middle;">
+          <img src="assets/images/truckbill-logo.png" alt="TruckBill" width="16" height="13" style="height: 13px !important; width: auto !important; max-height: 13px !important; display: inline-block !important; vertical-align: middle;">
           <span>TRUCKBILL</span>
         </span>
       </a>
 
       <nav aria-label="Primary Navigation">
         <ul class="nav-desktop-links">
-          <li><a href="index.html" class="<?php echo  === 'home' ? 'active' : ''; ?>">Overview</a></li>
-          <li><a href="features.html" class="<?php echo  === 'features' ? 'active' : ''; ?>">Features</a></li>
-          <li><a href="solutions.html" class="<?php echo  === 'solutions' ? 'active' : ''; ?>">Solutions</a></li>
-          <li><a href="how-it-works.html" class="<?php echo  === 'how-it-works' ? 'active' : ''; ?>">How It Works</a></li>
-          <li><a href="pricing.html" class="<?php echo  === 'pricing' ? 'active' : ''; ?>">Pricing</a></li>
-          <li><a href="faq.html" class="<?php echo  === 'faq' ? 'active' : ''; ?>">FAQ</a></li>
-          <li><a href="contact.html" class="<?php echo  === 'contact' ? 'active' : ''; ?>">Contact</a></li>
+          <li><a href="index.html" class="<?php echo $activePage === 'home' ? 'active' : ''; ?>">Overview</a></li>
+          <li><a href="features.html" class="<?php echo $activePage === 'features' ? 'active' : ''; ?>">Features</a></li>
+          <li><a href="solutions.html" class="<?php echo $activePage === 'solutions' ? 'active' : ''; ?>">Solutions</a></li>
+          <li><a href="how-it-works.html" class="<?php echo $activePage === 'how-it-works' ? 'active' : ''; ?>">How It Works</a></li>
+          <li><a href="pricing.html" class="<?php echo $activePage === 'pricing' ? 'active' : ''; ?>">Pricing</a></li>
+          <li><a href="faq.html" class="<?php echo $activePage === 'faq' ? 'active' : ''; ?>">FAQ</a></li>
+          <li><a href="contact.html" class="<?php echo $activePage === 'contact' ? 'active' : ''; ?>">Contact</a></li>
         </ul>
       </nav>
 
@@ -51,13 +51,13 @@ if (!isset()) {
       <button class="modal-close-btn" id="mobileCloseBtn" aria-label="Close Menu">✕</button>
     </div>
     <ul class="mobile-nav-links">
-      <li><a href="index.html" class="<?php echo  === 'home' ? 'active' : ''; ?>"><span>Overview</span> <span>→</span></a></li>
-      <li><a href="features.html" class="<?php echo  === 'features' ? 'active' : ''; ?>"><span>Features (12 Engines)</span> <span>→</span></a></li>
-      <li><a href="solutions.html" class="<?php echo  === 'solutions' ? 'active' : ''; ?>"><span>Solutions by Segment</span> <span>→</span></a></li>
-      <li><a href="how-it-works.html" class="<?php echo  === 'how-it-works' ? 'active' : ''; ?>"><span>How It Works</span> <span>→</span></a></li>
-      <li><a href="pricing.html" class="<?php echo  === 'pricing' ? 'active' : ''; ?>"><span>Pricing Plans</span> <span>→</span></a></li>
-      <li><a href="faq.html" class="<?php echo  === 'faq' ? 'active' : ''; ?>"><span>FAQs</span> <span>→</span></a></li>
-      <li><a href="contact.html" class="<?php echo  === 'contact' ? 'active' : ''; ?>"><span>Contact & Schedule</span> <span>→</span></a></li>
+      <li><a href="index.html" class="<?php echo $activePage === 'home' ? 'active' : ''; ?>"><span>Overview</span> <span>→</span></a></li>
+      <li><a href="features.html" class="<?php echo $activePage === 'features' ? 'active' : ''; ?>"><span>Features (12 Engines)</span> <span>→</span></a></li>
+      <li><a href="solutions.html" class="<?php echo $activePage === 'solutions' ? 'active' : ''; ?>"><span>Solutions by Segment</span> <span>→</span></a></li>
+      <li><a href="how-it-works.html" class="<?php echo $activePage === 'how-it-works' ? 'active' : ''; ?>"><span>How It Works</span> <span>→</span></a></li>
+      <li><a href="pricing.html" class="<?php echo $activePage === 'pricing' ? 'active' : ''; ?>"><span>Pricing Plans</span> <span>→</span></a></li>
+      <li><a href="faq.html" class="<?php echo $activePage === 'faq' ? 'active' : ''; ?>"><span>FAQs</span> <span>→</span></a></li>
+      <li><a href="contact.html" class="<?php echo $activePage === 'contact' ? 'active' : ''; ?>"><span>Contact & Schedule</span> <span>→</span></a></li>
     </ul>
   </div>
   <div>

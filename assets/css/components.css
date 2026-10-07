@@ -3,130 +3,223 @@
    Header, Footer, Demo Modal, Sticky CTA, Navigation, UI Elements
    ========================================================================== */
 
-/* Header (Sassy Glassmorphic Floating Header) */
+/* ==========================================================================
+   FLEETMORES — HEADER & NAVBAR (Sassy Home-3 Style)
+   ========================================================================== */
+
 .fm-header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  border-bottom: 1px solid var(--fm-border-color);
-  transition: all 0.3s var(--ease-sassy);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  height: 76px;
+  display: flex;
+  align-items: center;
 }
 
 .fm-header.scrolled {
   background: rgba(255, 255, 255, 0.98);
-  box-shadow: 0 10px 30px rgba(0, 37, 233, 0.06);
-  border-bottom-color: rgba(0, 37, 233, 0.08);
+  box-shadow: 0 8px 30px rgba(0, 37, 233, 0.06);
+  border-bottom-color: rgba(0, 37, 233, 0.12);
+  height: 70px;
+}
+
+.fm-header .container-fm {
+  width: 100%;
 }
 
 .header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 82px;
-  gap: 24px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  gap: 16px !important;
+  flex-wrap: nowrap !important;
 }
 
+/* Brand Group: Logo + Subtle TruckBill Sub-Badge */
 .header-brand-group {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  text-decoration: none;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  text-decoration: none !important;
+  flex-shrink: 0 !important;
+  white-space: nowrap !important;
+  cursor: pointer;
+}
+
+.header-brand-group .brand-logo-img {
+  height: 28px !important;
+  width: auto !important;
+  max-width: 180px !important;
+  display: block !important;
 }
 
 .header-brand-divider {
-  width: 1px;
-  height: 24px;
-  background-color: var(--fm-border-color);
+  width: 1px !important;
+  height: 22px !important;
+  background-color: #E2E8F0 !important;
+  display: inline-block !important;
+  flex-shrink: 0 !important;
 }
 
 .header-product-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 4px 10px;
-  border-radius: 9999px;
-  background: var(--fm-tertiary);
-  border: 1px solid var(--fm-tertiary-border);
-  font-family: var(--font-heading);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  color: var(--fm-primary);
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 3px 10px !important;
+  border-radius: 9999px !important;
+  background: #F3F6FE !important;
+  border: 1px solid #DCE4FD !important;
+  font-family: var(--font-heading) !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.04em !important;
+  color: #0025E9 !important;
+  flex-shrink: 0 !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+
+.header-product-badge img {
+  height: 13px !important;
+  width: auto !important;
+  max-height: 13px !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Desktop Navigation (Center Aligned, Perfectly Spaced) */
+.fm-header nav {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  flex-grow: 1 !important;
 }
 
 .nav-desktop-links {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  list-style: none;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 4px !important;
+  list-style: none !important;
+  margin: 0 !important; /* CRITICAL: Override Bootstrap ul */
+  padding: 0 !important; /* CRITICAL: Override Bootstrap ul */
+  flex-wrap: nowrap !important;
+}
+
+.nav-desktop-links li {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
 }
 
 .nav-desktop-links a {
-  font-family: var(--font-heading);
-  font-size: 0.94rem;
-  font-weight: 600;
-  color: var(--fm-secondary);
-  text-decoration: none;
-  padding: 8px 12px;
-  border-radius: 8px;
-  transition: all 0.2s ease;
-  position: relative;
+  display: inline-flex !important;
+  align-items: center !important;
+  font-family: var(--font-heading) !important;
+  font-size: 0.92rem !important;
+  font-weight: 600 !important;
+  color: #1a1a1a !important;
+  text-decoration: none !important;
+  padding: 8px 14px !important;
+  border-radius: 9999px !important;
+  transition: all 0.2s ease !important;
+  white-space: nowrap !important;
+  line-height: 1 !important;
+  border: 1px solid transparent !important;
 }
 
 .nav-desktop-links a:hover {
-  color: var(--fm-primary);
-  background-color: var(--fm-tertiary);
+  color: #0025E9 !important;
+  background-color: #F3F6FE !important;
 }
 
 .nav-desktop-links a.active {
-  color: var(--fm-primary);
-  background-color: var(--fm-tertiary);
+  color: #0025E9 !important;
+  background-color: #F3F6FE !important;
+  border-color: #DCE4FD !important;
+  font-weight: 700 !important;
 }
 
+/* Right Desktop CTA */
 .nav-desktop-cta {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  display: flex !important;
+  align-items: center !important;
+  flex-shrink: 0 !important;
+  white-space: nowrap !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* Hamburger Toggle */
+.nav-desktop-cta .btn-sassy {
+  padding: 10px 22px !important;
+  font-size: 0.88rem !important;
+  white-space: nowrap !important;
+  line-height: 1.2 !important;
+}
+
+/* Hamburger Button */
 .hamburger-toggle {
-  display: none;
-  background: none;
-  border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding: 0;
-  flex-direction: column;
-  gap: 5px;
+  display: none !important;
+  background: none !important;
+  border: 1.5px solid #E2E8F0 !important;
+  width: 42px !important;
+  height: 42px !important;
+  border-radius: 12px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  padding: 0 !important;
+  flex-direction: column !important;
+  gap: 5px !important;
+  flex-shrink: 0 !important;
+  transition: all 0.2s ease !important;
+}
+
+.hamburger-toggle:hover {
+  background-color: #F3F6FE !important;
+  border-color: #0025E9 !important;
 }
 
 .hamburger-line {
-  width: 22px;
-  height: 2px;
-  background-color: var(--fm-secondary);
-  border-radius: 2px;
-  transition: all 0.25s ease;
+  width: 20px !important;
+  height: 2px !important;
+  background-color: #000000 !important;
+  border-radius: 2px !important;
+  transition: all 0.25s ease !important;
 }
 
-@media (max-width: 991px) {
+/* Responsive Breakpoints */
+@media (max-width: 1080px) {
+  .fm-header nav,
   .nav-desktop-links,
   .nav-desktop-cta {
-    display: none;
+    display: none !important;
   }
+
   .hamburger-toggle {
-    display: flex;
+    display: flex !important;
+  }
+
+  .fm-header {
+    height: 68px !important;
   }
 }
+
 
 /* Mobile Nav Drawer */
 .mobile-nav-drawer {

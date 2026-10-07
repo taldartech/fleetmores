@@ -4,7 +4,7 @@
    ========================================================================== */
 
 /* Tablet (<= 991px) */
-@media (max-width: 991px) {
+@media (max-width: 1080px) {
   .nav-desktop-links,
   .nav-desktop-cta {
     display: none !important;
