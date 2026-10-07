@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Frequently Asked Questions | FleetMores TruckBill</title>
+  <meta name="description" content="Common questions regarding TruckBill deployment, Section 194C TDS, digital LR printing, multi-branch control, and data security.">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <header class="fm-header" id="mainHeader">
+    <div class="container-fm">
+      <div class="header-inner">
+        <a href="index.html" class="header-brand-group" aria-label="FleetMores Home">
+          <img src="assets/images/fleetmores-logo.svg" alt="FLEETMORES" width="180" height="26">
+          <span class="header-brand-divider"></span>
+          <span class="header-product-badge"><img src="assets/images/truckbill-logo.png" alt="TruckBill" height="14"><span>TRUCKBILL</span></span>
+        </a>
+        <nav aria-label="Primary Navigation">
+          <ul class="nav-desktop-links">
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="faq.html" class="active">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-desktop-cta">
+          <button class="btn-fm btn-fm-teal btn-fm-sm" data-open-demo data-demo-source="faq_nav">BOOK A DEMO</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-dark" style="padding-top: calc(76px + 4rem); padding-bottom: 3.5rem;">
+      <div class="container-fm text-center">
+        <span class="eyebrow">HELP & KNOWLEDGE BASE</span>
+        <h1 class="display-hero text-white mb-3">Frequently Asked Questions</h1>
+        <p class="lead-text mx-auto">Clear answers on how TruckBill simplifies transport operations, billing, and taxes.</p>
+      </div>
+    </section>
+
+    <section class="section-dark-surface py-5">
+      <div class="container-fm">
+        <div class="max-w-900 mx-auto">
+          <div class="accordion fm-accordion" id="faqAccordionPage">
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#f1">What is TruckBill?</button></h2>
+              <div id="f1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordionPage">
+                <div class="accordion-body">TruckBill is an end-to-end transport ERP developed by FleetMores. It brings trips, bilties (LRs), freight billing, TDS calculations, diesel tracking, and receivables into one cloud platform.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f2">Can I manage multiple branch offices?</button></h2>
+              <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqAccordionPage">
+                <div class="accordion-body">Yes. Each branch can have its own customized LR series and restricted staff access, while the head office owner maintains a 360° consolidated ledger view.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f3">How does Section 194C TDS work in TruckBill?</button></h2>
+              <div id="f3" class="accordion-collapse collapse" data-bs-parent="#faqAccordionPage">
+                <div class="accordion-body">TruckBill automatically calculates 1% or 2% TDS during invoice creation and helps you match deductions directly against your customer Form 26AS records.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f4">How long does implementation take?</button></h2>
+              <div id="f4" class="accordion-collapse collapse" data-bs-parent="#faqAccordionPage">
+                <div class="accordion-body">Standard setup takes less than 48 hours. Our team assists you in uploading customer, vehicle, and driver masters directly from Excel files.</div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-5">
+            <button class="btn-fm btn-fm-teal btn-fm-lg" data-open-demo data-demo-source="faq_page_cta">STILL HAVE QUESTIONS? BOOK A DEMO</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="fm-footer">
+    <div class="container-fm">
+      <div class="footer-bottom"><div>© 2026 FleetMores Technologies. All rights reserved. Flagship product TruckBill ERP.</div></div>
+    </div>
+  </footer>
+
+  <div class="fm-modal-backdrop" id="demoModal" role="dialog" aria-modal="true">
+    <div class="fm-modal-card">
+      <button class="fm-modal-close" id="closeDemoModal">✕</button>
+      <div id="demoFormContainer">
+        <h3 class="h4 text-white mb-2">Book Your TruckBill Walkthrough</h3>
+        <form id="fleetmoresDemoForm" novalidate>
+          <div class="fm-form-group"><label class="fm-label">Full Name *</label><input type="text" class="fm-input" name="name" required placeholder="Name"></div>
+          <div class="fm-form-group"><label class="fm-label">Company *</label><input type="text" class="fm-input" name="company" required placeholder="Company"></div>
+          <div class="fm-form-group"><label class="fm-label">Mobile *</label><input type="tel" class="fm-input" name="mobile" required placeholder="Mobile"></div>
+          <button type="submit" class="btn-fm btn-fm-teal w-100 py-3 mt-3">BOOK MY DEMO</button>
+        </form>
+      </div>
+      <div id="demoSuccessState" style="display: none; text-align: center; padding: 1.5rem 0;">
+        <h3 class="h4 text-white mb-2">Request Confirmed!</h3>
+        <a href="#" id="instantWhatsAppCta" target="_blank" rel="noopener" class="btn-fm btn-fm-teal w-100 py-3">Open WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/interactive.js"></script>
+  <script src="assets/js/analytics.js"></script>
+</body>
+</html>

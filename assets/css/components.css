@@ -1,0 +1,611 @@
+/* ==========================================================================
+   FLEETMORES — Feature Components & UI Showcase Styling
+   Interactive ERP Mockups, Comparison Tables, Pricing & Calculators
+   ========================================================================== */
+
+/* 1. Problem / Transformation Section (CHAOS -> TRUCKBILL -> CONTROL) */
+.transformation-flow {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3.5rem;
+}
+
+.transformation-card {
+  background: var(--fm-charcoal-surface);
+  border: 1px solid var(--fm-charcoal-border);
+  border-radius: 20px;
+  padding: 2.2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.transformation-card.chaos {
+  border-color: rgba(239, 68, 68, 0.25);
+  background: linear-gradient(180deg, rgba(239, 68, 68, 0.05) 0%, #182023 100%);
+}
+
+.transformation-card.control {
+  border-color: rgba(58, 166, 140, 0.4);
+  background: linear-gradient(180deg, rgba(58, 166, 140, 0.08) 0%, #182023 100%);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+.transformation-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--fm-teal);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.arrow-circle {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: var(--fm-charcoal-surface);
+  border: 2px solid var(--fm-teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--fm-teal);
+  font-size: 1.4rem;
+  box-shadow: 0 0 20px var(--fm-teal-glow);
+}
+
+.pain-point-list, .control-point-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.pain-point-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.92rem;
+  color: #D1D5DB;
+}
+
+.pain-icon {
+  color: #EF4444;
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.control-point-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.92rem;
+  color: var(--fm-white);
+  font-weight: 500;
+}
+
+.control-icon {
+  color: var(--fm-teal);
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+/* 2. Layered Product UI Hero Preview */
+.hero-product-console {
+  background: #151C1F;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.4s var(--ease-smooth);
+}
+
+.console-header {
+  background: #0E1315;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.window-dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot.red { background: #FF5F56; }
+.dot.yellow { background: #FFBD2E; }
+.dot.green { background: #27C93F; }
+
+.console-title-pill {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--fm-text-light-muted);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.2rem 0.65rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.console-body {
+  padding: 1.5rem;
+  background: #141B1E;
+}
+
+/* 3. 12 Feature Stories Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 1.85rem;
+  margin-top: 3.5rem;
+}
+
+.feature-card {
+  background: var(--fm-charcoal-surface);
+  border: 1px solid var(--fm-charcoal-border);
+  border-radius: 18px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s var(--ease-quick), border-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(58, 166, 140, 0.4);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+}
+
+.feature-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.feature-number {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--fm-teal);
+  background: rgba(58, 166, 140, 0.12);
+  border: 1px solid rgba(58, 166, 140, 0.25);
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+  letter-spacing: 0.05em;
+}
+
+.feature-status-badge {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #F59E0B;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--fm-white);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.feature-desc {
+  font-size: 0.92rem;
+  color: var(--fm-text-light-muted);
+  line-height: 1.55;
+  margin-bottom: 1.5rem;
+}
+
+.feature-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.feature-points li {
+  font-size: 0.85rem;
+  color: #C5CFD4;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.feature-points li::before {
+  content: '✓';
+  color: var(--fm-teal);
+  font-weight: 800;
+  font-size: 0.75rem;
+}
+
+.feature-card-preview {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* 4. Interactive UI Showcase Tab Switcher */
+.ui-showcase-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.ui-tab-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--fm-text-light-muted);
+  padding: 0.65rem 1.4rem;
+  border-radius: 9999px;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ui-tab-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--fm-white);
+}
+
+.ui-tab-btn.active {
+  background: var(--fm-teal);
+  color: #0B1310;
+  border-color: var(--fm-teal);
+  box-shadow: 0 4px 14px var(--fm-teal-glow);
+}
+
+.ui-panel {
+  display: none;
+  animation: fadeIn 0.3s var(--ease-smooth);
+}
+
+.ui-panel.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 5. TruckBill Mockup Cards */
+.mockup-stat-card {
+  background: #111719;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.15rem;
+}
+
+.mockup-stat-num {
+  font-family: var(--font-mono);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--fm-white);
+  line-height: 1.1;
+}
+
+.mockup-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.mockup-table th {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: var(--fm-text-light-muted);
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: left;
+}
+
+.mockup-table td {
+  padding: 0.65rem 0.8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  color: #E2E8F0;
+}
+
+.status-badge-green {
+  background: rgba(39, 201, 63, 0.15);
+  color: #27C93F;
+  border: 1px solid rgba(39, 201, 63, 0.3);
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+.status-badge-yellow {
+  background: rgba(245, 158, 11, 0.15);
+  color: #F59E0B;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+/* 6. Solutions Segment Cards */
+.segment-card {
+  background: #FFFFFF;
+  border: 1px solid var(--fm-light-border);
+  border-radius: 20px;
+  padding: 2.2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.segment-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+  border-color: var(--fm-teal);
+}
+
+.segment-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: var(--fm-light-surface-subtle);
+  border: 1px solid var(--fm-light-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* 7. 4-Step "How It Works" */
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+  position: relative;
+}
+
+.step-card {
+  background: var(--fm-charcoal-surface);
+  border: 1px solid var(--fm-charcoal-border);
+  border-radius: 18px;
+  padding: 2rem 1.5rem;
+  position: relative;
+}
+
+.step-num-bubble {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(58, 166, 140, 0.12);
+  border: 1.5px solid var(--fm-teal);
+  color: var(--fm-teal);
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+/* 8. Comparison Section (Generic vs TruckBill) */
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3.5rem;
+}
+
+.comparison-box {
+  border-radius: 20px;
+  padding: 2.5rem;
+}
+
+.comparison-box.generic {
+  background: #141B1E;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.comparison-box.truckbill {
+  background: linear-gradient(180deg, rgba(58, 166, 140, 0.12) 0%, #182023 100%);
+  border: 1.5px solid var(--fm-teal);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* 9. Interactive ROI Calculator */
+.roi-card {
+  background: var(--fm-charcoal-surface);
+  border: 1px solid var(--fm-charcoal-border);
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.slider-group {
+  margin-bottom: 2rem;
+}
+
+.slider-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.slider-val {
+  font-family: var(--font-mono);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--fm-teal);
+}
+
+.fm-range {
+  width: 100%;
+  accent-color: var(--fm-teal);
+  height: 6px;
+  cursor: pointer;
+}
+
+.roi-results-box {
+  background: #111719;
+  border: 1px solid rgba(58, 166, 140, 0.25);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.roi-savings-number {
+  font-family: var(--font-mono);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  color: var(--fm-teal);
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+/* 10. Pricing Section */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3.5rem;
+}
+
+.pricing-card {
+  background: var(--fm-charcoal-surface);
+  border: 1px solid var(--fm-charcoal-border);
+  border-radius: 22px;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.pricing-card.popular {
+  border-color: var(--fm-teal);
+  background: linear-gradient(180deg, rgba(58, 166, 140, 0.1) 0%, #182023 100%);
+  transform: scale(1.03);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--fm-teal);
+  color: #071510;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 0.25rem 0.85rem;
+  border-radius: 9999px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* 11. FAQ Accordion */
+.fm-accordion .accordion-item {
+  background: var(--fm-charcoal-surface);
+  border: 1px solid var(--fm-charcoal-border);
+  border-radius: 14px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.fm-accordion .accordion-button {
+  background: var(--fm-charcoal-surface);
+  color: var(--fm-white);
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 1.3rem 1.5rem;
+  box-shadow: none;
+}
+
+.fm-accordion .accordion-button:not(.collapsed) {
+  background: #151D20;
+  color: var(--fm-teal);
+  border-bottom: 1px solid var(--fm-charcoal-border);
+}
+
+.fm-accordion .accordion-button::after {
+  filter: invert(1);
+}
+
+.fm-accordion .accordion-body {
+  background: #151D20;
+  color: var(--fm-text-light-muted);
+  line-height: 1.65;
+  padding: 1.4rem 1.5rem;
+}
+
+/* Section Light Variant of Accordion */
+.section-light .fm-accordion .accordion-item {
+  background: #FFFFFF;
+  border-color: var(--fm-light-border);
+}
+
+.section-light .fm-accordion .accordion-button {
+  background: #FFFFFF;
+  color: var(--fm-text-dark);
+}
+
+.section-light .fm-accordion .accordion-button:not(.collapsed) {
+  background: var(--fm-light-surface-subtle);
+  color: var(--fm-jade);
+}
+
+.section-light .fm-accordion .accordion-button::after {
+  filter: none;
+}
+
+.section-light .fm-accordion .accordion-body {
+  background: var(--fm-light-surface-subtle);
+  color: var(--fm-text-dark-muted);
+}
