@@ -1,0 +1,17 @@
+{
+  "name": "FleetMores — Transport Infrastructure",
+  "short_name": "FleetMores",
+  "description": "FleetMores is promoting TruckBill — India’s premier transport operations and billing ERP.",
+  "start_url": "https://fleetmores.com/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#0025E9",
+  "icons": [
+    {
+      "src": "https://fleetmores.com/assets/images/fleetmores-logo.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
