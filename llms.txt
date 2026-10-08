@@ -30,11 +30,6 @@
 - **Fleet Owners (Own Trucks)**: Vehicle P&L, diesel mileage audit, driver advances, document expiries.
 - **Commission Agents & Freight Brokers**: Dual-rate lorry vouchers, commission margin locks, supplier TDS compliance.
 
-## Pricing Plans (INR)
-- **Starter**: ₹1,499 / month (Up to 15 trucks / single branch)
-- **Growth (Recommended)**: ₹3,499 / month (15–70 trucks, multi-branch, diesel audit, double-entry transport accounting)
-- **Enterprise**: Custom ROI plan (70+ trucks, custom API sync, dedicated support)
-
 ## Indian Compliance & Localization
 - **GST Compliance**: Reverse Charge Mechanism (RCM) & Forward Charge Mechanism (FCM) support.
 - **Income Tax**: Automated Section 194C TDS deduction & Pan-10 truck declaration recordkeeping.
