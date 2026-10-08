@@ -45,7 +45,7 @@
           <li><a href="contact.html">Schedule 1-on-1 Demo</a></li>
           <li><a href="faq.html">Help & FAQs</a></li>
           <li><a href="tel:+919784451256">+91 97844 51256</a></li>
-          <li><a href="mailto:contact@fleetmores.com">contact@fleetmores.com</a></li>
+          <li><a href="mailto:fleetezee@gmail.com">fleetezee@gmail.com</a></li>
           <li><span style="color: var(--fm-dark-text-muted); font-size: 0.9rem;">Mon – Sat: 9:30 AM – 7:30 PM IST</span></li>
         </ul>
       </div>
