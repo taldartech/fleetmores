@@ -12,63 +12,64 @@
     </div>
 
     <div class="modal-body">
-      <form id="demoBookingForm" onsubmit="return handleDemoSubmit(event);">
-        <div class="row g-3">
-          <div class="col-12 col-md-6">
-            <div class="form-group-fm">
-              <label class="form-label-fm" for="demoName">Your Full Name *</label>
-              <input type="text" class="form-input-fm" id="demoName" required placeholder="e.g. Rajesh Sharma">
+              <form id="demoBookingForm" onsubmit="return handleDemoSubmit(event);">
+          <div class="row g-3">
+            <div class="col-12 col-md-6">
+              <div class="form-group-fm">
+                <label class="form-label-fm" for="demoName">Name *</label>
+                <input type="text" class="form-input-fm" id="demoName" name="name" required placeholder="e.g. Rajesh Sharma" autocomplete="name">
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group-fm">
+                <label class="form-label-fm" for="demoEmail">Email *</label>
+                <input type="email" class="form-input-fm" id="demoEmail" name="email" required placeholder="e.g. rajesh@company.com" autocomplete="email">
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group-fm">
+                <label class="form-label-fm" for="demoPhone">Mobile *</label>
+                <input type="tel" class="form-input-fm" id="demoPhone" name="phone" required placeholder="e.g. 98765 43210" autocomplete="tel">
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group-fm">
+                <label class="form-label-fm" for="demoCompany">Company *</label>
+                <input type="text" class="form-input-fm" id="demoCompany" name="company" required placeholder="e.g. Sharma Roadways Pvt Ltd" autocomplete="organization">
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group-fm">
+                <label class="form-label-fm" for="demoCity">City *</label>
+                <input type="text" class="form-input-fm" id="demoCity" name="city" required placeholder="e.g. Jaipur, Mumbai, Ahmedabad" autocomplete="address-level2">
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group-fm">
+                <label class="form-label-fm" for="demoState">State *</label>
+                <input type="text" class="form-input-fm" id="demoState" name="state" required placeholder="e.g. Rajasthan, Maharashtra" autocomplete="address-level1">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group-fm">
+                <label class="form-label-fm" for="demoRemark">Remark <span style="font-weight: 400; color: var(--fm-muted-text); font-size: 0.85rem;">(Optional)</span></label>
+                <textarea class="form-input-fm" id="demoRemark" name="remark" rows="2" placeholder="Any specific requirements or questions (optional)" style="min-height: 70px; resize: vertical;"></textarea>
+              </div>
             </div>
           </div>
-          <div class="col-12 col-md-6">
-            <div class="form-group-fm">
-              <label class="form-label-fm" for="demoPhone">Mobile / WhatsApp *</label>
-              <input type="tel" class="form-input-fm" id="demoPhone" required placeholder="e.g. 98765 43210">
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="form-group-fm">
-              <label class="form-label-fm" for="demoCompany">Transport Company Name *</label>
-              <input type="text" class="form-input-fm" id="demoCompany" required placeholder="e.g. Sharma Roadways Pvt Ltd">
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="form-group-fm">
-              <label class="form-label-fm" for="demoFleetSize">Fleet / Operational Volume</label>
-              <select class="form-select-fm" id="demoFleetSize">
-                <option value="1-10">1 – 10 Trucks / LRs per day</option>
-                <option value="11-30">11 – 30 Trucks</option>
-                <option value="31-100" selected>31 – 100 Trucks</option>
-                <option value="100+">100+ Enterprise Fleet</option>
-                <option value="broker">Broker / Agency (Market Vehicles)</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="form-group-fm">
-              <label class="form-label-fm" for="demoSlot">Preferred Time Slot</label>
-              <select class="form-select-fm" id="demoSlot">
-                <option value="today-afternoon">Today Afternoon (2:00 PM – 5:00 PM)</option>
-                <option value="tomorrow-morning">Tomorrow Morning (10:30 AM – 1:00 PM)</option>
-                <option value="tomorrow-afternoon">Tomorrow Afternoon</option>
-                <option value="custom">Custom Time (Our team will call you)</option>
-              </select>
-            </div>
-          </div>
-        </div>
 
-        <div style="margin-top: 24px;">
-          <button type="submit" class="btn-sassy btn-sassy-primary w-100 py-3" id="demoSubmitBtn">
-            <span>Confirm Live Demo Booking</span> <span class="btn-arrow">→</span>
-          </button>
-        </div>
+          <div style="margin-top: 20px;">
+            <button type="submit" class="btn-sassy btn-sassy-primary w-100 py-3" id="demoSubmitBtn">
+              <span>Schedule Free Demo</span> <span class="btn-arrow">→</span>
+            </button>
+          </div>
 
-        <div style="text-align: center; margin-top: 14px;">
-          <span style="font-size: 0.8rem; color: var(--fm-muted-text);">
-            🔒 100% Free • No Credit Card Required • Instant WhatsApp Confirmation
-          </span>
-        </div>
-      </form>
+          <div style="text-align: center; margin-top: 14px;">
+            <span style="font-size: 0.82rem; color: var(--fm-muted-text);">
+              🔒 100% Free • No Credit Card • Call us: <a href="tel:+919784451256" style="color: var(--fm-primary); font-weight: 600;">+91 97844 51256</a> / <a href="tel:+919001010007" style="color: var(--fm-primary); font-weight: 600;">+91 9001010007</a>
+            </span>
+          </div>
+        </form>
     </div>
   </div>
 </div>
